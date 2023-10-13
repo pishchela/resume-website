@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    APP_NAME: "cicd-pipeline-resume-website"
+    APP_NAME: "resume-website"
 phases:
   install:
     runtime-versions:
@@ -16,6 +16,6 @@ phases:
   post_build:
     commands:
       - echo build process finished, we should upload to S3 now
-      - cd dist/resume-website
+      - cd dist/$APP_NAME
       - ls -la
       - aws s3 sync . s3://landing-resume-bucket --delete
