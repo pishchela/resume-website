@@ -19,3 +19,8 @@ phases:
       - cd dist/$APP_NAME
       - ls -la
       - aws s3 sync . s3://landing-resume-bucket --delete
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist/$APP_NAME
