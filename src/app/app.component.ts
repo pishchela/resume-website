@@ -3,6 +3,8 @@ import { AccordionComponent } from "./shared/accordion/accordion.component";
 import { HeaderComponent } from "./header/header.component";
 import { AccordionHeaderComponent } from "./shared/accordion-header/accordion-header.component";
 import { AccordionBodyComponent } from "./shared/accordion-body/accordion-body.component";
+import { HeaderSectionComponent } from "./sections/header-section/header-section.component";
+import { BiographySectionComponent } from "./sections/biography-section/biography-section.component";
 
 const accordionComponents = [
   AccordionComponent,
@@ -17,6 +19,8 @@ const accordionComponents = [
   standalone: true,
   imports: [
     HeaderComponent,
+    HeaderSectionComponent,
+    BiographySectionComponent,
     accordionComponents,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,

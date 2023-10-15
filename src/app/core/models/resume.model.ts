@@ -5,7 +5,7 @@ export interface Resume {
   // TODO: add here links to sections;
   biography: {
     header: string;
-    description: string;
+    description: string[];
   };
   sections: Section[];
 }

@@ -1,6 +1,14 @@
-h1, h2, h4, h5, p {
+h1,
+h2,
+h4,
+h3,
+h5,
+p,
+ul li,
+a {
   font-family: Inter, sans-serif;
   font-style: normal;
+  margin: 0;
 }
 // TODO: ask Kate for fonts
 
@@ -9,7 +17,6 @@ h1 {
   font-size: 72px;
   font-weight: 500;
   line-height: 68px; /* 94.444% */
-  margin-top: 75px;
 }
 
 h2 {
@@ -17,7 +24,13 @@ h2 {
   font-size: 48px;
   font-weight: 500;
   line-height: 52px; /* 108.333% */
-  margin: 30px 0;
+}
+
+h3 {
+  color: var(--resume-black-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 16px; /* 66.667% */
 }
 
 h4 {
@@ -37,10 +50,22 @@ h5, p {
 
 h5 {
   color: var(--resume-opacity-black-color);
-  margin: 0;
 }
 
 p {
   color: var(--resume-black-color);
-  margin: 0;
+}
+
+ul li {
+  color: var(--resume-black-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 16px; /* 88.889% */
+}
+
+a {
+  color: var(--resume-white-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px; /* 100% */
 }

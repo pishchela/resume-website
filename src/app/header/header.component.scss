@@ -1,0 +1,34 @@
+header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--resume-white-color);
+
+  .full_name {
+    padding: 15px 94px 15px var(--paddding-side-size);
+    background-color: var(--resume-black-color);
+    p {
+      color: var(--resume-white-color);
+      white-space: nowrap;
+    }
+  }
+
+
+  ul {
+    padding: 15px var(--paddding-side-size) 15px 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  ul li{
+    cursor: pointer;
+    display: inline;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
