@@ -1,0 +1,10 @@
+<div class="accordion" [ngClass]="{'accordion__opened': isOpened}">
+  <div class="accordion__header" (click)="isOpened = !isOpened">
+    <ng-content select="[slot=header]"></ng-content>
+  </div>
+  <hr class="accordion__opening-hr">
+  <div class="accordion__body">
+    <ng-content select="[slot=body]"></ng-content>
+  </div>
+  <hr class="accordion__closing-hr">
+</div>

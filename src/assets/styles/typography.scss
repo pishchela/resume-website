@@ -1,0 +1,46 @@
+h1, h2, h4, h5, p {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+}
+// TODO: ask Kate for fonts
+
+h1 {
+  color: var(--resume-white-color);
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 68px; /* 94.444% */
+  margin-top: 75px;
+}
+
+h2 {
+  color: var(--resume-black-color);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px; /* 108.333% */
+  margin: 30px 0;
+}
+
+h4 {
+  color: var(--resume-black-color);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 32px; /* 128% */
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+h5, p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+
+h5 {
+  color: var(--resume-opacity-black-color);
+  margin: 0;
+}
+
+p {
+  color: var(--resume-black-color);
+  margin: 0;
+}

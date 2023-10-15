@@ -1,0 +1,22 @@
+:host {
+  img {
+    width: 40px;
+    height: 40px;
+    transition:
+      opacity .5s,
+      rotate .5s;
+  }
+
+  &.opened {
+    img {
+      rotate: 90deg;
+      opacity: 0.4;
+    }
+  }
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

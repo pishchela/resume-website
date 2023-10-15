@@ -1,0 +1,68 @@
+// TODO: maybe refactor this;
+
+.accordion {
+
+  &__header {
+    cursor: pointer;
+  }
+
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 63px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    transition:
+      max-height 1s cubic-bezier(0, 1, 0, 1),
+      padding-top 1s,
+      padding-bottom 1s;
+  }
+
+  &__opening-hr {
+    margin-top: 15px;
+
+    border-color: var(--resume-hr-color);
+    transition:
+      margin-top 0.5s ease-in-out,
+      border-top-color 0.5s ease-in-out;
+  }
+
+  &__closing-hr {
+    opacity: 0;
+
+    transition:
+      opacity 1s ease-out;
+  }
+
+
+  &__opened {
+
+    .accordion__opening-hr {
+      margin-top: 20px;
+      border-color: var(--resume-black-color);
+
+      transition:
+        margin-top 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+    }
+
+    .accordion__closing-hr {
+      opacity: 1;
+
+      transition:
+        opacity 1s ease-out;
+    }
+
+    .accordion__body {
+      max-height: 2000px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      transition:
+        max-height 0.7s ease-in-out,
+        padding-top 0.7s ease-in-out,
+        padding-bottom 0.7s ease-in-out;
+    }
+  }
+}
