@@ -1,22 +1,26 @@
 export interface Resume {
   fullName: string;
   header: string;
-  social: Array<{[key: string]: string }>;
+  social?: Array<{ [key: string]: string }>;
   // TODO: add here links to sections;
-  biography: {
-    header: string;
-    description: string[];
-  };
-  sections: Section[];
+  headingSection: HeadingSection;
+  sections: ItemsSection[];
 }
 
 interface Section {
-  name: string;
-  items: SectionItem;
+  title: string;
+  backgroundColor: string;
 }
 
-interface SectionItem {
+interface HeadingSection extends Section{
   header: string;
-  subheader: string;
-  list: string[];
+  description: string[];
+}
+
+interface ItemsSection extends Section{
+  content: {
+    header: string;
+    subheader: string;
+    description: string[];
+  }[]
 }

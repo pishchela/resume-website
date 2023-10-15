@@ -1,0 +1,42 @@
+{
+  "fullName": "Vladislav Paley",
+  "header" : "Seeking a leadership role focused on sustainable engineering and management.",
+  "headingSection": {
+    "title": "Biography",
+    "backgroundColor": "#E3E9EE",
+    "header": "Seeking a leadership role focused on sustainable engineering and management.",
+    "description": [
+      "Bringing over a decade of diverse engineering experience, I excel in automation, failure analysis, and risk assessment. With a unique ability to bridge technical and business domains, I'm recognized for my exceptional communication skills and commitment to innovation.",
+      "As a self-motivated individual and a valuable team player, I am deeply committed to advancing green engineering solutions with efficiency and precision."
+    ]
+  },
+  "sections": [
+    {
+      "title": "Education",
+      "backgroundColor": "#FFF",
+      "content": [
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
+            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
+            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
+          ]
+        },
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+          ]
+        },
+        {
+          "header": "Associate of Arts",
+          "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
+          "description": [
+          ]
+        }
+      ]
+    }
+  ]
+}

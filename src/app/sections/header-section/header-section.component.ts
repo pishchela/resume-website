@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
+// TODO: rename to subheader;
 @Component({
-  selector: 'app-header-section',
+  selector: 'resume-header-section',
   templateUrl: './header-section.component.html',
   styleUrls: ['./header-section.component.scss'],
   imports: [

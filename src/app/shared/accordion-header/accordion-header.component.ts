@@ -6,7 +6,7 @@ import {
 } from "@angular/core";
 
 @Component({
-  selector: 'accordion-header',
+  selector: 'resume-accordion-header',
   templateUrl: './accordion-header.component.html',
   styleUrls: ['./accordion-header.component.scss'],
   standalone: true,

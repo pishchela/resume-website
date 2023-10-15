@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: 'app-accordion-body',
+  selector: 'resume-accordion-body',
   templateUrl: './accordion-body.component.html',
   styleUrls: ['./accordion-body.component.scss'],
   imports: [

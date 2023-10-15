@@ -1,0 +1,22 @@
+.resume {
+
+  &__heading_content {
+    h2 {
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px; /* 133.333% */
+
+      max-width: 662px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__section_content {
+
+  }
+}

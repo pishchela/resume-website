@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: 'app-header',
+  selector: 'resume-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   imports: [

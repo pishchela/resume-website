@@ -1,6 +1,10 @@
 header {
-  width: 100%;
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: var(--resume-white-color);

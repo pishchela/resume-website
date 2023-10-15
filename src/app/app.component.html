@@ -1,9 +1,35 @@
-<app-header></app-header>
-<app-header-section></app-header-section>
-<app-biography-section></app-biography-section>
-<div style="padding: 100px 30px">
-  <app-accordion>
-    <accordion-header slot="header"></accordion-header>
-    <app-accordion-body [list]="toDeleteList" slot="body"></app-accordion-body>
-  </app-accordion>
+<!--TODO: use HTML5 tags like 'section'-->
+<div class="resume" *ngIf="data">
+  <resume-header></resume-header>
+  <section>
+    <resume-header-section></resume-header-section>
+  </section>
+
+  <section *ngIf="data.headingSection as section">
+    <resume-section-container [backgroundColor]="section.backgroundColor">
+      <ng-container slot="header">{{section.title}}</ng-container>
+      <div class="resume__heading_content">
+        <h2>{{section.header}}</h2>
+        <p *ngFor="let item of section.description">{{item}}</p>
+      </div>
+    </resume-section-container>
+  </section>
+
+  <section *ngFor="let section of data.sections">
+    <resume-section-container [backgroundColor]="section.backgroundColor">
+      <ng-container slot="header">{{section.title}}</ng-container>
+      <div class="resume__section_content">
+        <div *ngFor="let item of section.content">
+          <resume-accordion>
+            <resume-accordion-header slot="header"
+                                     [header]="item.subheader"
+                                     [header]="item.header">
+            </resume-accordion-header>
+            <resume-accordion-body [list]="item.description" slot="body"></resume-accordion-body>
+          </resume-accordion>
+        </div>
+      </div>
+    </resume-section-container>
+  </section>
+
 </div>

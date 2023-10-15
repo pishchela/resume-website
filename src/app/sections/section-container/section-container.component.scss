@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px var(--paddding-side-size) 200px 30px;
+  background-color: var(--resume-section-default-color);
+  h3 {
+    margin-top: 10px;
+  }
+  .section__content {
+    max-width: 887px;
+  }
+}
