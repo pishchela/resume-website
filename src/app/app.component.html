@@ -19,7 +19,8 @@
     <resume-section-container [backgroundColor]="section.backgroundColor">
       <ng-container slot="header">{{section.title}}</ng-container>
       <div class="resume__section_content">
-        <div *ngFor="let item of section.content">
+        <div class="resume__section_content__item"
+             *ngFor="let item of section.content">
           <resume-accordion>
             <resume-accordion-header slot="header"
                                      [header]="item.subheader"

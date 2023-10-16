@@ -78,7 +78,6 @@ export class AppComponent implements OnInit, OnDestroy {
       // Give the backgrounds some random images
       // section.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
 
-
       gsap.to(section, {
         scrollTrigger: {
           trigger: section,

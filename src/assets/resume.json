@@ -37,6 +37,87 @@
           ]
         }
       ]
+    },
+    {
+      "title": "To Delete Section",
+      "backgroundColor": "red",
+      "content": [
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
+            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
+            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
+          ]
+        },
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+          ]
+        },
+        {
+          "header": "Associate of Arts",
+          "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
+          "description": [
+          ]
+        }
+      ]
+    },
+    {
+      "title": "To Delete Section 2",
+      "backgroundColor": "green",
+      "content": [
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
+            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
+            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
+          ]
+        },
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+          ]
+        },
+        {
+          "header": "Associate of Arts",
+          "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
+          "description": [
+          ]
+        }
+      ]
+    },
+    {
+      "title": "To Delete Section 3",
+      "backgroundColor": "blue",
+      "content": [
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
+            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
+            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
+          ]
+        },
+        {
+          "header": "Master of Science",
+          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
+          "description": [
+          ]
+        },
+        {
+          "header": "Associate of Arts",
+          "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
+          "description": [
+          ]
+        }
+      ]
     }
   ]
 }
