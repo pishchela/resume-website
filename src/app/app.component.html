@@ -1,11 +1,17 @@
 <!--TODO: use HTML5 tags like 'section'-->
 <div class="resume" *ngIf="data">
-  <resume-header></resume-header>
+  <resume-header
+    (navClicked)="scrollToSection($event)"
+    [nav]="data.nav"
+    [fullName]="data.fullName">
+  </resume-header>
   <section>
     <resume-header-section></resume-header-section>
   </section>
 
-  <section *ngIf="data.headingSection as section">
+  <section
+    id="{{data.headingSection.title}}"
+    *ngIf="data.headingSection as section">
     <resume-section-container [backgroundColor]="section.backgroundColor">
       <ng-container slot="header">{{section.title}}</ng-container>
       <div class="resume__heading_content">
@@ -15,7 +21,8 @@
     </resume-section-container>
   </section>
 
-  <section *ngFor="let section of data.sections">
+  <section *ngFor="let section of data.sections"
+           id="{{section.title}}">
     <resume-section-container [backgroundColor]="section.backgroundColor">
       <ng-container slot="header">{{section.title}}</ng-container>
       <div class="resume__section_content">

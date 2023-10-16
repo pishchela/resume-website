@@ -1,6 +1,13 @@
 {
   "fullName": "Vladislav Paley",
   "header" : "Seeking a leadership role focused on sustainable engineering and management.",
+  "nav": [
+    "Biography",
+    "Education",
+    "Experience",
+    "Skills",
+    "Publications"
+  ],
   "headingSection": {
     "title": "Biography",
     "backgroundColor": "#E3E9EE",
@@ -39,7 +46,7 @@
       ]
     },
     {
-      "title": "To Delete Section",
+      "title": "Experience",
       "backgroundColor": "red",
       "content": [
         {
@@ -66,7 +73,7 @@
       ]
     },
     {
-      "title": "To Delete Section 2",
+      "title": "Skills",
       "backgroundColor": "green",
       "content": [
         {
@@ -93,7 +100,7 @@
       ]
     },
     {
-      "title": "To Delete Section 3",
+      "title": "Publications",
       "backgroundColor": "blue",
       "content": [
         {

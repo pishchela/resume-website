@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
@@ -12,11 +12,10 @@ import { CommonModule } from "@angular/common";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  public headerItems: string[] = [
-    'Biography',
-    'Education',
-    'Experience',
-    'Skills',
-    'Publications',
-  ];
+  @Output()
+  navClicked: EventEmitter<string> = new EventEmitter<string>();
+  @Input()
+  public fullName!: string;
+  @Input()
+  public nav!: string[]
 }

@@ -3,7 +3,7 @@ import {
   Component, OnDestroy,
   OnInit,
 } from '@angular/core';
-import { CommonModule } from "@angular/common";
+import { CommonModule, ViewportScroller } from "@angular/common";
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -43,16 +43,12 @@ const accordionComponents = [
 })
 export class AppComponent implements OnInit, OnDestroy {
   public data!: Resume;
-  toDeleteList = [
-    'Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices',
-    'Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components',
-    'Mentored five masters and undergraduate students in the lab and a 4-person capstone design team'
-  ];
 
   private _dataSubscription!: Subscription;
   constructor(
     private _dataService: DataService,
     private _cdr: ChangeDetectorRef,
+    private _scroller: ViewportScroller
   ) {
   }
 
@@ -68,6 +64,22 @@ export class AppComponent implements OnInit, OnDestroy {
       })
   }
 
+  public ngOnDestroy() {
+    this._dataSubscription.unsubscribe();
+  }
+
+  public scrollToSection(sectionName: string) {
+    const position = this._getScrollPosition(sectionName);
+    this._scroller.scrollToPosition([0 , position - 50]);
+  }
+
+  private _getScrollPosition(id: string) {
+    const st = ScrollTrigger.create({ trigger: `#${id}`, pinnedContainer: '.pin-spacer', start: 'top top' })
+    const stStart = st.start
+    st.kill()
+    return stStart;
+  }
+
   private _registerGSAP(): void {
     // Register the ScrollTrigger with gsap
     gsap.registerPlugin(ScrollTrigger);
@@ -78,20 +90,17 @@ export class AppComponent implements OnInit, OnDestroy {
       // Give the backgrounds some random images
       // section.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
 
+      console.warn(section);
       gsap.to(section, {
         scrollTrigger: {
           trigger: section,
           // TODO: delete markers, and need to make header exact style size, maybe get there size from css;
           markers: true,
-          start: `-=${index * 45}`,
           pin: true,
-          pinSpacing: false
+          pinSpacing: false,
         }
       });
+      //section2.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
-  }
-
-  public ngOnDestroy() {
-    this._dataSubscription.unsubscribe();
   }
 }

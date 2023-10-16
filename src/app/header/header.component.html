@@ -1,8 +1,11 @@
 <header>
   <div class="full_name">
-    <p>Vladislav Paley</p>
+    <p>{{fullName}}</p>
   </div>
   <ul>
-    <li *ngFor="let item of headerItems">{{item}}</li>
+    <li
+      *ngFor="let navItem of nav"
+      (click)="navClicked.emit(navItem)"
+    >{{navItem}}</li>
   </ul>
 </header>

@@ -3,6 +3,7 @@ export interface Resume {
   header: string;
   social?: Array<{ [key: string]: string }>;
   // TODO: add here links to sections;
+  nav: string[];
   headingSection: HeadingSection;
   sections: ItemsSection[];
 }
