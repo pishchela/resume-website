@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { SocialItem, SocialType } from "../../core/models/resume.model";
 
 // TODO: rename to subheader;
 @Component({
@@ -12,11 +13,9 @@ import { CommonModule } from "@angular/common";
   standalone: true,
 })
 export class HeaderSectionComponent {
-  public header: string = 'Seeking a leadership role focused on sustainable engineering and management.';
-  public social: string[] = [
-    'paley.vlad@yahoo.com',
-    '(215) 704-0718',
-    'Linkedin',
-    'Resume (PDF)',
-  ]
+  public socialType = SocialType;
+  @Input()
+  public header!: string;
+  @Input()
+  public socialItems!: SocialItem[];
 }

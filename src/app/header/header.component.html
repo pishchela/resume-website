@@ -2,10 +2,12 @@
   <div class="full_name">
     <p>{{fullName}}</p>
   </div>
-  <ul>
-    <li
-      *ngFor="let navItem of nav"
-      (click)="navClicked.emit(navItem)"
-    >{{navItem}}</li>
-  </ul>
+  <nav>
+    <ul>
+      <li
+        *ngFor="let navItem of nav"
+        (click)="navClicked.emit(navItem)"
+      >{{navItem}}</li>
+    </ul>
+  </nav>
 </header>

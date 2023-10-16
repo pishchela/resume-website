@@ -1,6 +1,28 @@
 {
   "fullName": "Vladislav Paley",
   "header" : "Seeking a leadership role focused on sustainable engineering and management.",
+  "socialItems": [
+    {
+      "type": "email",
+      "key": "paley.vlad@yahoo.com",
+      "value": "paley.vlad@yahoo.com"
+    },
+    {
+      "type": "phone",
+      "key": "(215) 704-0718",
+      "value": "2157040718"
+    },
+    {
+      "type": "link",
+      "key": "Resume (PDF)",
+      "value": "TODO: here link to resume"
+    },
+    {
+      "type": "link",
+      "key": "LinkedIn",
+      "value": "https://www.linkedin.com/in/vladpaley/"
+    }
+  ],
   "nav": [
     "Biography",
     "Education",

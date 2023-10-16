@@ -4,9 +4,26 @@
     <img src="assets/images/header-image.png" alt="resume-image">
   </div>
   <div class="section__social">
-    <a *ngFor="let item of social">
-      {{item}}
-    </a>
+    <ng-container *ngFor="let item of socialItems">
+      <ng-container [ngSwitch]="item.type">
+        <a
+          *ngSwitchCase="socialType.EMAIL"
+          href="mailto:{{item.value}}">
+          {{item.key}}
+        </a>
+        <a
+          *ngSwitchCase="socialType.PHONE"
+          href="tel:{{item.value}}">
+          {{item.key}}
+        </a>
+        <a
+          *ngSwitchCase="socialType.LINK"
+          href="{{item.value}}"
+          target=”_blank”>
+          {{item.key}}
+        </a>
+      </ng-container>
+    </ng-container>
   </div>
   <!---TODO: store image in next-gen format --->
 </div>

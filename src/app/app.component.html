@@ -6,7 +6,10 @@
     [fullName]="data.fullName">
   </resume-header>
   <section>
-    <resume-header-section></resume-header-section>
+    <resume-header-section
+      [header]="data.header"
+      [socialItems]="data.socialItems">
+    </resume-header-section>
   </section>
 
   <section

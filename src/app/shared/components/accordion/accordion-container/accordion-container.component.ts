@@ -4,13 +4,13 @@ import { CommonModule } from "@angular/common";
 @Component({
   selector: 'resume-accordion',
   standalone: true,
-  templateUrl: './accordion.component.html',
-  styleUrls: ['./accordion.component.scss'],
+  templateUrl: './accordion-container.component.html',
+  styleUrls: ['./accordion-container.component.scss'],
   imports: [
     CommonModule,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AccordionComponent {
+export class AccordionContainerComponent {
   public isOpened = false;
 }
