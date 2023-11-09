@@ -33,10 +33,13 @@
              *ngFor="let item of section.content">
           <resume-accordion>
             <resume-accordion-header slot="header"
-                                     [header]="item.subheader"
+                                     [subheader]="item.subheader"
                                      [header]="item.header">
             </resume-accordion-header>
-            <resume-accordion-body [list]="item.description" slot="body"></resume-accordion-body>
+            <resume-accordion-body
+              [list]="item.description?.list"
+              slot="body">
+            </resume-accordion-body>
           </resume-accordion>
         </div>
       </div>

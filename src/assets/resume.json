@@ -47,104 +47,188 @@
         {
           "header": "Master of Science",
           "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
-            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
-            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
-          ]
+          "description": {
+            "list": [
+              "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
+              "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
+              "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
+            ]
+          }
         },
         {
           "header": "Master of Science",
           "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-          ]
+          "description": {}
         },
         {
           "header": "Associate of Arts",
           "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
-          "description": [
-          ]
+          "description": {}
         }
       ]
     },
     {
-      "title": "Experience",
-      "backgroundColor": "red",
+      "title": "Professional experience",
+      "backgroundColor": "#E3EEE9",
       "content": [
         {
-          "header": "Master of Science",
-          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
-            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
-            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
-          ]
+          "header": "Laboratory Manager",
+          "subheader": "STMicroelectronics, Inc., Fremont, CA - February 2022 to September 2023",
+          "description": {
+            "list": [
+              "Managed a newly-functional, chemically-intensive R&D laboratory, focusing on safety aspects like rule creation, program development, competency training, hazard assessment, chemical and waste management, equipment maintenance, and the shipping and receiving of Dangerous Goods (DG). Ensured adherence to DOT & IATA shipping procedures, for domestic & international shipments.",
+              "Maintained strict compliance with numerous regulations, encompassing federal, state, local, and corporate levels. This included recordkeeping, reporting, inspections and audits, in alignment with standards set by bodies like OSHA, EPA, DEA, and more.",
+              "Developed and implemented comprehensive safety programs and protocols such as the Emergency Action Plan, Injury and Illness Prevention Plan, Hazard Communication, and Waste Management Plan. Increased employee safety by implementing a myriad of safety features such as an Emergency Response Team, strategically placed walkie-talkies and signs, additional sensors and alarms, and evacuation drills.",
+              "Oversaw the lifecycle of chemicals from entry to exit, implementing rigorous management practices and providing specialized training to employees. Enacted strict measures like spill containment, scrubbers on air vents, and filters to maintain a safe working environment.",
+              "Initiated the implementation of ISO9001 and IATF16949 quality standards across the site, conducting a thorough gap analysis and formulating a plan of action. Collaboratively built knowledge and expertise to overcome the challenge of the team lacking prior experience with ISO standards."
+            ]
+          }
         },
         {
-          "header": "Master of Science",
-          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-          ]
+          "header": "Research Assistant",
+          "subheader": "University of South Florida, Tampa, FL - November 2017 to August 2021",
+          "description": {}
         },
         {
-          "header": "Associate of Arts",
-          "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
-          "description": [
-          ]
+          "header": "Teaching Assistant",
+          "subheader": "University of South Florida, Tampa, FL - January 2018 to May 2021",
+          "description": {}
+        },
+        {
+          "header": "NSF IRES Research Grant Participant",
+          "subheader": "University of Science and Technology, Beijing, China - May 2017 to August 2018",
+          "description": {}
+        },
+        {
+          "header": "Engineering Intern",
+          "subheader": "Medcomp Inc, Harleysville, PA - May 2016 to August 2016",
+          "description": {}
         }
       ]
     },
     {
-      "title": "Skills",
-      "backgroundColor": "green",
+      "title": "Project Experience",
+      "backgroundColor": "#E3E9EE",
       "content": [
         {
-          "header": "Master of Science",
-          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
-            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
-            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
-          ]
+          "header": "4D Printed Soft Robotics and Energy Harvesters",
+          "subheader": "Graduate Research - 2020 to 2021",
+          "description": {
+            "list": [
+              "Created a polymer solution which can be used as an ink with 4D inkjet/polyjet printing",
+              "Drew inspiration from nature to create a multi-material soft robot which can self actuate when exposed to water or humidity",
+              "Implemented traditional origami and kirigami techniques to allow for pre-determined shape change",
+              "Drafted a senior design project for undergraduate students based on this research"
+            ]
+          }
         },
         {
-          "header": "Master of Science",
-          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-          ]
+          "header": "Cold Plasma Sterilization and Static Recharge Devices",
+          "subheader": "Design Lead - 2020 to 2021",
+          "description": {}
         },
         {
-          "header": "Associate of Arts",
-          "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
-          "description": [
-          ]
+          "header": "Here, There, and Everywhere",
+          "subheader": "Team Lead - 2020",
+          "description": {}
+        },
+        {
+          "header": "Image and Video Processing Projects",
+          "subheader": "Individual Projects - 2019",
+          "description": {}
+        },
+        {
+          "header": "Wheelchair Mounted Arm Elevating Device (iRise)",
+          "subheader": "Project Lead - 2018 to 2019",
+          "description": {}
+        },
+        {
+          "header": "Manus Arm Robotic Assistant's Arm Lift (MARA aLift)",
+          "subheader": "Project Lead - 2018",
+          "description": {}
+        },
+        {
+          "header": "Robot and Simulator for End Effector Tracking and Singularity Avoidance",
+          "subheader": "Project Lead - 2018",
+          "description": {}
+        },
+        {
+          "header": "Active Clothing with Embedded Sensors and Live Monitoring",
+          "subheader": "Team Member - 2017",
+          "description": {}
+        },
+        {
+          "header": "Automatic Table Operation for Wheelchairs",
+          "subheader": "Design Lead - 2017",
+          "description": {}
+        },
+        {
+          "header": "Lab Racing and Distance Sensing Robot",
+          "subheader": "Controls Programmer - 2017",
+          "description": {}
+        },
+        {
+          "header": "Microgravity Food Production System",
+          "subheader": "Design Lead - 2016",
+          "description": {}
+        },
+        {
+          "header": "Quadrotor Design, Automation, and Racing Competitions",
+          "subheader": "Event Organizer and Team Member - 2012 - 2014",
+          "description": {}
+        },
+        {
+          "header": "NASA’s Reduced Gravity Education Flight Program (MicroG NExT Program)",
+          "subheader": "2011 to 2012",
+          "description": {}
         }
       ]
     },
     {
-      "title": "Publications",
-      "backgroundColor": "blue",
+      "title": "Leadership Experience",
+      "backgroundColor": "#FFF",
       "content": [
         {
-          "header": "Master of Science",
-          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-            "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
-            "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
-            "Mentored five masters and undergraduate students in the lab and a 4-person capstone design team"
-          ]
+          "header": "Theta Tau Coed Professional Engineering Fraternity",
+          "subheader": "September 2014 to December 2019",
+          "description": {
+            "listItems": [
+              {
+                "header": "Treasurer",
+                "list": [
+                  "Collected dues, established payment plans, paid national fees, and ran financial audits",
+                  "Verified all budgets for each fraternity-sponsored event before they could be approved",
+                  "Kept careful record of all transactions done by any member using chapter funds"
+                ]
+              },
+              {
+                "header": "Marshal/New Member Instructor",
+                "list": [
+                  "Set up a new member education manual to teach national and local fraternity history and values",
+                  "Hosted weekly meetings to ensure a timely pledging process completion and instill self-confidence",
+                  "Mediated in disagreements between new members as well as active brothers"
+                ]
+              },
+              {
+                "header": "Brotherhood Chair",
+                "list": [
+                  "Organized appealing events for brothers and new members to bond at on a personal level",
+                  "Worked with the treasurer and assigned committee to create and pass budgets for each event"
+                ]
+              },
+              {
+                "header": "Recruitment Chair",
+                "list": [
+                  "Orchestrated two weeks of casual and professional events to attract potential new members",
+                  "Participated in elected-board meetings and proposed several mid-semester recruitment events"
+                ]
+              }
+            ]
+          }
         },
         {
-          "header": "Master of Science",
-          "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-          "description": [
-          ]
-        },
-        {
-          "header": "Associate of Arts",
-          "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
-          "description": [
-          ]
+          "header": "Society of Bucks Engineers",
+          "subheader": "November 2012 to July 2014"
         }
       ]
     }

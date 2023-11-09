@@ -34,6 +34,19 @@ interface ItemsSection extends Section{
   content: {
     header: string;
     subheader: string;
-    description: string[];
+    description: {
+      list?: string[];
+      listItems: ListItem[]
+    };
   }[]
+}
+
+// enum DescriptionType {
+//   SINGLE_LIST = 'single-list',
+//   LIST_WITH_HEADER = 'list-with-header',
+// }
+//
+interface ListItem {
+  list: string[];
+  header: string;
 }

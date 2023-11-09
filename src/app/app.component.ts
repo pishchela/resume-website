@@ -61,9 +61,9 @@ export class AppComponent implements OnInit, OnDestroy {
         this.data = res;
         console.warn(this.data);
         this._cdr.markForCheck();
-        requestAnimationFrame(() => {
-          this._registerGSAP();
-        });
+        // requestAnimationFrame(() => {
+        //   this._registerGSAP();
+        // });
       })
   }
 
@@ -102,6 +102,9 @@ export class AppComponent implements OnInit, OnDestroy {
           markers: true,
           pin: true,
           pinSpacing: false,
+          // TODO: figure out here
+          start: "center 45px",
+          end: "max",
         }
       });
     });

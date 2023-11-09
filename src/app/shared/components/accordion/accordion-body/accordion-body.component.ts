@@ -12,5 +12,5 @@ import { CommonModule } from "@angular/common";
 })
 export class AccordionBodyComponent {
   @Input()
-  list!: string[];
+  list!: string[] | undefined;
 }
