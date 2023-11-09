@@ -48,6 +48,7 @@
           "header": "Master of Science",
           "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
           "description": {
+            "type": "list",
             "list": [
               "Conducted research on 4D Printing, Shape Memory Effect in Polymers and Alloys, Soft Robotics and Assistive Devices",
               "Implemented origami and kirigami techniques into 3D and 4D printed soft robotic components",
@@ -75,6 +76,7 @@
           "header": "Laboratory Manager",
           "subheader": "STMicroelectronics, Inc., Fremont, CA - February 2022 to September 2023",
           "description": {
+            "type": "list",
             "list": [
               "Managed a newly-functional, chemically-intensive R&D laboratory, focusing on safety aspects like rule creation, program development, competency training, hazard assessment, chemical and waste management, equipment maintenance, and the shipping and receiving of Dangerous Goods (DG). Ensured adherence to DOT & IATA shipping procedures, for domestic & international shipments.",
               "Maintained strict compliance with numerous regulations, encompassing federal, state, local, and corporate levels. This included recordkeeping, reporting, inspections and audits, in alignment with standards set by bodies like OSHA, EPA, DEA, and more.",
@@ -114,6 +116,7 @@
           "header": "4D Printed Soft Robotics and Energy Harvesters",
           "subheader": "Graduate Research - 2020 to 2021",
           "description": {
+            "type": "list",
             "list": [
               "Created a polymer solution which can be used as an ink with 4D inkjet/polyjet printing",
               "Drew inspiration from nature to create a multi-material soft robot which can self actuate when exposed to water or humidity",
@@ -192,7 +195,8 @@
           "header": "Theta Tau Coed Professional Engineering Fraternity",
           "subheader": "September 2014 to December 2019",
           "description": {
-            "listItems": [
+            "type": "list-complex",
+            "complexList": [
               {
                 "header": "Treasurer",
                 "list": [

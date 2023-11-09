@@ -1,4 +1,5 @@
-<div class="accordion" [ngClass]="{'accordion__opened': isOpened}">
+<div class="accordion"
+     [ngClass]="{'accordion__opened': isOpened}">
   <div class="accordion__header" (click)="isOpened = !isOpened">
     <ng-content select="[slot=header]"></ng-content>
   </div>

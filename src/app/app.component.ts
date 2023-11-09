@@ -11,7 +11,6 @@ import { Subscription } from "rxjs";
 
 import { HeaderComponent } from "./header/header.component";
 import { AccordionHeaderComponent } from "./shared/components/accordion/accordion-header/accordion-header.component";
-import { AccordionBodyComponent } from "./shared/components/accordion/accordion-body/accordion-body.component";
 import { HeaderSectionComponent } from "./sections/header-section/header-section.component";
 import { SectionContainerComponent } from "./sections/section-container/section-container.component";
 import { DataService } from "./core/services/data.service";
@@ -20,6 +19,7 @@ import { HTMLUtils } from "./shared/utils/html.utils";
 import {
   AccordionContainerComponent
 } from "./shared/components/accordion/accordion-container/accordion-container.component";
+import { AccordionBodyComponent } from "./shared/components/accordion/accordion-body/accordion-body.component";
 
 const accordionComponents = [
   AccordionContainerComponent,
@@ -45,6 +45,7 @@ const accordionComponents = [
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit, OnDestroy {
+  /// TODO: https://angular.io/guide/prerendering
   public data!: Resume;
 
   private _dataSubscription!: Subscription;

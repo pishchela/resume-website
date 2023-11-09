@@ -1,4 +1,15 @@
-<div *ngFor="let item of list">
-  <p>{{item}}</p>
-</div>
+<!----TODO: use new control flow here --->
+<ng-container [ngSwitch]="description?.type">
+  <resume-accordion-body-list
+    *ngSwitchCase="descriptionTypes.LIST"
+    [list]="description?.list"
+    slot="body">
+  </resume-accordion-body-list>
 
+  <resume-accordion-list-complex
+    *ngSwitchCase="descriptionTypes.LIST_COMPLEX"
+    [complexList]="description?.complexList"
+  >
+  </resume-accordion-list-complex>
+
+</ng-container>

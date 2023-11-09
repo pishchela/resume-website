@@ -24,6 +24,7 @@
     </resume-section-container>
   </section>
 
+  <!---TODO: use here new control flow 'for' --->
   <section *ngFor="let section of data.sections"
            id="{{section.title}}">
     <resume-section-container [backgroundColor]="section.backgroundColor">
@@ -37,8 +38,8 @@
                                      [header]="item.header">
             </resume-accordion-header>
             <resume-accordion-body
-              [list]="item.description?.list"
-              slot="body">
+              slot="body"
+              [description]="item.description">
             </resume-accordion-body>
           </resume-accordion>
         </div>

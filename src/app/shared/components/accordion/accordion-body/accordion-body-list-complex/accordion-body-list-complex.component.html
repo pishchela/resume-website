@@ -1,0 +1,11 @@
+<div *ngFor="let item of complexList" class="complex-list">
+  <div class="complex-list__item">
+    <h6>{{item.header}}</h6>
+    <div>
+      <p *ngFor="let list of item.list">
+        {{list}}
+      </p>
+    </div>
+  </div>
+</div>
+

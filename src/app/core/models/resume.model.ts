@@ -1,3 +1,4 @@
+// TODO: use then multiple files for it;
 export interface Resume {
   fullName: string;
   header: string;
@@ -25,28 +26,31 @@ interface Section {
   backgroundColor: string;
 }
 
-interface HeadingSection extends Section{
+interface HeadingSection extends Section {
   header: string;
   description: string[];
 }
 
-interface ItemsSection extends Section{
+interface ItemsSection extends Section {
   content: {
     header: string;
     subheader: string;
-    description: {
-      list?: string[];
-      listItems: ListItem[]
-    };
+    description: ItemsSectionDescription;
   }[]
 }
 
-// enum DescriptionType {
-//   SINGLE_LIST = 'single-list',
-//   LIST_WITH_HEADER = 'list-with-header',
-// }
-//
-interface ListItem {
+export interface ItemsSectionDescription {
+  type: DescriptionType;
+  list?: string[];
+  complexList?: ComplexList[]
+}
+
+export enum DescriptionType {
+  LIST = 'list',
+  LIST_COMPLEX = 'list-complex',
+}
+
+export interface ComplexList {
   list: string[];
   header: string;
 }
