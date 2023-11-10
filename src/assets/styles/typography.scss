@@ -119,3 +119,16 @@ a {
     line-height: 45px;
   }
 }
+
+@media screen and (max-width: $screenWidthTablet) {
+  a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $screenWidthMobile) {
+  h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
