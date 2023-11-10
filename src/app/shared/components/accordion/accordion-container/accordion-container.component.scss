@@ -1,3 +1,4 @@
+@import "../../../../../assets/styles/variables";
 // TODO: maybe refactor this;
 
 .accordion {
@@ -19,7 +20,7 @@
   }
 
   &__opening-hr {
-    margin-top: 15px;
+    margin-top: 1.07vw;
 
     border-color: var(--resume-hr-color);
     transition:
@@ -38,7 +39,7 @@
   &__opened {
 
     .accordion__opening-hr {
-      margin-top: 20px;
+      margin-top: 1.43vw;
       border-color: var(--resume-black-color);
 
       transition:
@@ -54,14 +55,32 @@
     }
 
     .accordion__body {
-      max-height: 2000px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      max-height: 142.86vw;
+      padding-top: 3.57vw;
+      padding-bottom: 3.57vw;
 
       transition:
         max-height 0.7s ease-in-out,
         padding-top 0.7s ease-in-out,
         padding-bottom 0.7s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthLargest) {
+  .accordion {
+    &__opening-hr {
+      margin-top: 15px;
+    }
+    &__opened {
+      .accordion__opening-hr {
+        margin-top: 20px;
+      }
+      .accordion__body {
+        max-height: 2000px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
     }
   }
 }

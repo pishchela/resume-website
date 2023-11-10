@@ -16,6 +16,7 @@
     id="{{data.headingSection.title}}"
     *ngIf="data.headingSection as section">
     <resume-section-container [backgroundColor]="section.backgroundColor">
+
       <ng-container slot="header">{{section.title}}</ng-container>
       <div class="resume__heading_content">
         <h2>{{section.header}}</h2>

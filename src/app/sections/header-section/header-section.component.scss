@@ -1,35 +1,81 @@
+@import "../../../assets/styles/variables";
+
 .section {
-  padding: 0 var(--paddding-side-size) 15px var(--paddding-side-size);
+  padding: 0 var(--paddding-side-size) 1.1vw var(--paddding-side-size);
   background-color: var(--resume-black-color);
 
   &__header {
     display: flex;
     justify-content: space-between;
-    padding-top: 120px;
+    padding-top: 8.57vw;
 
+    &__image {
+      width: 14.8vw;
+      height: 19.5vw;
+    }
     img {
-      width: 207px;
-      height: 272px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
   &__social {
     display: flex;
     flex-flow: column wrap;
-    height: 70px;
+    height: 5vw;
     align-items: flex-start;
     width: fit-content;
   }
 }
 
 h1 {
-  max-width: 887px;
-  padding-bottom: 261px;
+  max-width: 63.36vw;
+  padding-bottom: 18.64vw;
+  padding-right: 98px;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
   color: var(--resume-white-color);
-  margin-right: 47px;
-  margin-bottom: 15px;
+  margin-right: 3.36vw;
+  margin-bottom: 1.07vw;
+}
+
+@media screen and (max-width: $screenWidthLargest) {
+  .section {
+    padding-bottom: 15px;
+    &__header {
+      padding-top: 120px;
+    }
+  }
+  .section {
+    &__social {
+      height: 70px;
+    }
+  }
+  h1 {
+    max-width: 887px;
+    padding-bottom: 261px;
+  }
+
+  a {
+    margin-right: 47px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktop) {
+  h1 {
+    padding-bottom: 110px;
+    max-width: 481px;
+  }
+  .section {
+    &__header {
+      &__image {
+        max-width: 148px;
+        max-height: 174px;
+      }
+    }
+  }
 }

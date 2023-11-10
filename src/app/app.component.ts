@@ -9,7 +9,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { Subscription } from "rxjs";
 
-import { HeaderComponent } from "./header/header.component";
+import { HeaderComponent } from "./layout/header/header.component";
 import { AccordionHeaderComponent } from "./shared/components/accordion/accordion-header/accordion-header.component";
 import { HeaderSectionComponent } from "./sections/header-section/header-section.component";
 import { SectionContainerComponent } from "./sections/section-container/section-container.component";
@@ -86,6 +86,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   private _registerGSAP(): void {
+    const headerHeight = HTMLUtils.getHeaderHeight();
     // Register the ScrollTrigger with gsap
     gsap.registerPlugin(ScrollTrigger);
 
@@ -104,7 +105,7 @@ export class AppComponent implements OnInit, OnDestroy {
           pin: true,
           pinSpacing: false,
           // TODO: figure out here
-          start: "center 45px",
+          start: `center ${headerHeight}px`,
           end: "max",
         }
       });

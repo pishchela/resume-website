@@ -2,7 +2,7 @@
   <div class="full_name">
     <p>{{fullName}}</p>
   </div>
-  <nav>
+  <nav class="desktop">
     <ul>
       <li
         *ngFor="let navItem of nav"
@@ -10,4 +10,9 @@
       >{{navItem}}</li>
     </ul>
   </nav>
+  <div class="mobile-menu-trigger tablet">
+    <button>
+      <img src="../../../assets/images/menu.svg" alt="mobile-menu">
+    </button>
+  </div>
 </header>

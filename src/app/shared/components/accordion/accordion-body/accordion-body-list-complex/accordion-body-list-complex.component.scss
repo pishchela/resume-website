@@ -1,7 +1,8 @@
+@import "../../../../../../assets/styles/variables";
 
 .complex-list {
-  border-bottom: 1px solid var(--resume-hr-color);
-  padding: 30px 0;
+  border-bottom: 0.071vw solid var(--resume-hr-color);
+  padding: var(--paddding-side-size) 0;
   &:first-child {
     padding-top: 0;
   }
@@ -12,7 +13,7 @@
   &__item {
     display: flex;
     p {
-      margin-bottom: 30px;
+      margin-bottom: 2.14vw;
       &:last-child {
         margin-bottom: 0;
       }
@@ -21,7 +22,23 @@
 
   h6 {
     width: 100%;
-    min-width: 227px;
-    max-width: 227px;
+    min-width: 16.21vw;
+    max-width: 16.21vw;
+  }
+}
+
+
+@media screen and (max-width: $screenWidthLargest) {
+  .complex-list{
+    border-bottom-width: 1px;
+    &__item {
+      p {
+        margin-bottom: 30px;
+      }
+    }
+    h6 {
+      min-width: 227px;
+      max-width: 227px;
+    }
   }
 }

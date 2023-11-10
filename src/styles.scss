@@ -1,4 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/typography";
+@import "assets/styles/variables";
+
 :root {
   --resume-white-color: #FFF;
   --resume-black-color: #19201F;
@@ -6,25 +8,19 @@
   --resume-opacity-black-color: rgba(0, 0, 0, 0.40);
   --resume-hr-color: rgba(25, 32, 31, 0.20);
 
-  --paddding-side-size-default: 30px;
-  --paddding-side-size-large: 20px;
+  --paddding-side-size-default: 2.15vw;
+  --padding-side-size-desktop: 30px;
+  --paddding-side-size-tablet: 20px;
   --paddding-side-size: var(--paddding-side-size-default);
 
-  --header-height-full: 45px;
+  --header-height: 3.21vw;
+  --header-height-desktop: 45px;
 }
 
 html, body {
   // Maybe working only in chrome
   scroll-behavior: smooth;
 }
-
-@media screen and (max-width: 840px) {
-  :root {
-    --paddding-side-size: var(--paddding-side-size-large);
-  }
-}
-
-@import "assets/styles/typography";
 
 
 body {
@@ -34,4 +30,32 @@ body {
 hr {
   border-color: var(--resume-black-color);
   margin: 0;
+}
+
+.desktop {
+  display: flex;
+}
+
+.tablet {
+  display: none;
+}
+
+
+@media screen and (max-width: $screenWidthLargest) {
+  :root {
+    --paddding-side-size: var(--padding-side-size-desktop);
+    --header-height: var(--header-height-desktop);
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktop) {
+  :root {
+    --paddding-side-size: var(--paddding-side-size-tablet);
+  }
+  .desktop {
+    display: none!important;
+  }
+  .tablet {
+    display: flex;
+  }
 }

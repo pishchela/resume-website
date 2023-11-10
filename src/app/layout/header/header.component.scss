@@ -1,0 +1,76 @@
+@import "../../../assets/styles/variables";
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--resume-black-color);
+
+  .full_name {
+    display: flex;
+    align-items: center;
+    padding: 0 6.71vw 0 var(--paddding-side-size);
+    p {
+      color: var(--resume-white-color);
+      white-space: nowrap;
+      font-size: 1.29vw;
+    }
+  }
+
+  nav {
+    width: 100%;
+    background-color: var(--resume-white-color);
+    justify-content: end;
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    padding-right: var(--paddding-side-size);
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  ul li{
+    cursor: pointer;
+    display: inline;
+    margin-right: 2.14vw;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .mobile-menu-trigger {
+    padding: var(--paddding-side-size) var(--paddding-side-size) 0 0;
+    button {
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      width: 40px;
+      height: 11px;
+    }
+  }
+}
+// TODO: Do mobile layout
+
+@media screen and (max-width: $screenWidthLargest) {
+  header {
+    .full_name {
+      padding-right: 94px;
+      p {
+        font-size: 18px;
+      }
+    }
+    ul li{
+      margin-right: 30px;
+    }
+  }
+}

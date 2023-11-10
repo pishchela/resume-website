@@ -1,13 +1,27 @@
+@import "../../../assets/styles/variables";
+
 :host {
   display: flex;
   justify-content: space-between;
-  padding: 30px var(--paddding-side-size) 200px 30px;
+  padding: var(--paddding-side-size) var(--paddding-side-size) 14.29vw var(--paddding-side-size);
   background-color: var(--resume-section-default-color);
   h3 {
-    margin-top: 10px;
+    margin-top: 0.71vw;
   }
   .section__content {
     width: 100%;
-    max-width: 887px;
+    max-width: 63.35vw;
+  }
+}
+
+@media screen and (max-width: $screenWidthLargest) {
+  :host {
+    padding-bottom: 200px;
+    h3 {
+      margin-top: 10px;
+    }
+    .section__content {
+      max-width: 887px;
+    }
   }
 }
