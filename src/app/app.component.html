@@ -26,26 +26,32 @@
   </section>
 
   <!---TODO: use here new control flow 'for' --->
-<!--  <section *ngFor="let section of data.sections"-->
-<!--           id="{{section.title}}">-->
-<!--    <resume-section-container [backgroundColor]="section.backgroundColor">-->
-<!--      <ng-container slot="header">{{section.title}}</ng-container>-->
-<!--      <div class="resume__section_content">-->
-<!--        <div class="resume__section_content__item"-->
-<!--             *ngFor="let item of section.content">-->
-<!--          <resume-accordion>-->
-<!--            <resume-accordion-header slot="header"-->
-<!--                                     [subheader]="item.subheader"-->
-<!--                                     [header]="item.header">-->
-<!--            </resume-accordion-header>-->
-<!--            <resume-accordion-body-->
-<!--              slot="body"-->
-<!--              [description]="item.description">-->
-<!--            </resume-accordion-body>-->
-<!--          </resume-accordion>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </resume-section-container>-->
-<!--  </section>-->
+  <section *ngFor="let section of data.sections"
+           id="{{section.title}}">
+    <resume-section-container [backgroundColor]="section.backgroundColor">
+      <ng-container slot="header">{{section.title}}</ng-container>
+      <div class="resume__section_content">
+        <div class="resume__section_content__item"
+             *ngFor="let item of section.content">
+          <resume-accordion>
+            <resume-accordion-header slot="header"
+                                     [subheader]="item.subheader"
+                                     [header]="item.header">
+            </resume-accordion-header>
+            <resume-accordion-body
+              slot="body"
+              [description]="item.description">
+            </resume-accordion-body>
+          </resume-accordion>
+        </div>
+      </div>
+    </resume-section-container>
+  </section>
+  <section>
+    <resume-header-section
+      [header]="data.header"
+      [socialItems]="data.socialItems">
+    </resume-header-section>
+  </section>
 
 </div>

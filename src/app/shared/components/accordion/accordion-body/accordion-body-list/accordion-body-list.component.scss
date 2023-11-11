@@ -23,3 +23,15 @@ div {
     padding-left: 63px;
   }
 }
+
+@media screen and (max-width: $screenWidthDesktop) {
+  .body-list {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  .body-list {
+    padding-left: 30px;
+  }
+}

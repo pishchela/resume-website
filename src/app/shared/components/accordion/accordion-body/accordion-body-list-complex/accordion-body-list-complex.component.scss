@@ -42,3 +42,30 @@
     }
   }
 }
+
+@media screen and (max-width: $screenWidthDesktop) {
+  .complex-list{
+    padding-left: 50px;
+    &__item {
+      flex-direction: column;
+      p {
+        margin-bottom: 20px;
+      }
+    }
+    h6 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktop) {
+  .complex-list {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  .complex-list {
+    padding-left: 30px;
+  }
+}
