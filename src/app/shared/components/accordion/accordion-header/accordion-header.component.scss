@@ -36,6 +36,9 @@
 @media screen and (max-width: $screenWidthDesktop) {
   .accordion-header {
     position: relative;
+    h4 {
+      padding-right: 35px;
+    }
   }
   :host {
     img {
