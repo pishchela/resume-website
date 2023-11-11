@@ -118,6 +118,14 @@ a {
     font-size: 48px;
     line-height: 45px;
   }
+  h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 @media screen and (max-width: $screenWidthTablet) {
@@ -130,5 +138,13 @@ a {
   h1 {
     font-size: 32px;
     line-height: 32px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 14px;
+    line-height: 14px;
   }
 }

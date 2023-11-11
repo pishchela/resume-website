@@ -50,3 +50,38 @@
     }
   }
 }
+
+@media screen and (max-width: $screenWidthDesktopLarge) {
+  .resume {
+    &__heading_content {
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktop) {
+  .resume {
+    &__heading_content {
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthMobile) {
+  .resume {
+    &__heading_content {
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}

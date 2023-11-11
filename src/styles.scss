@@ -11,6 +11,7 @@
   --paddding-side-size-default: 2.15vw;
   --padding-side-size-desktop: 30px;
   --paddding-side-size-tablet: 20px;
+  --paddding-side-size-mobile: 10px;
   --paddding-side-size: var(--paddding-side-size-default);
 
   --header-height: 3.21vw;
@@ -57,5 +58,11 @@ hr {
   }
   .tablet {
     display: flex;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  :root {
+    --paddding-side-size: var(--paddding-side-size-mobile);
   }
 }

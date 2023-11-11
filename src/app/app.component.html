@@ -12,18 +12,18 @@
     </resume-header-section>
   </section>
 
-<!--  <section-->
-<!--    id="{{data.headingSection.title}}"-->
-<!--    *ngIf="data.headingSection as section">-->
-<!--    <resume-section-container [backgroundColor]="section.backgroundColor">-->
+  <section
+    id="{{data.headingSection.title}}"
+    *ngIf="data.headingSection as section">
+    <resume-section-container [backgroundColor]="section.backgroundColor">
 
-<!--      <ng-container slot="header">{{section.title}}</ng-container>-->
-<!--      <div class="resume__heading_content">-->
-<!--        <h2>{{section.header}}</h2>-->
-<!--        <p *ngFor="let item of section.description">{{item}}</p>-->
-<!--      </div>-->
-<!--    </resume-section-container>-->
-<!--  </section>-->
+      <ng-container slot="header">{{section.title}}</ng-container>
+      <div class="resume__heading_content">
+        <h2>{{section.header}}</h2>
+        <p *ngFor="let item of section.description">{{item}}</p>
+      </div>
+    </resume-section-container>
+  </section>
 
   <!---TODO: use here new control flow 'for' --->
 <!--  <section *ngFor="let section of data.sections"-->
