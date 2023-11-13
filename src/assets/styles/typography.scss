@@ -30,7 +30,6 @@ h2 {
 }
 
 h3 {
-  color: var(--resume-black-color);
   font-size: 1.71vw;
   font-weight: 700;
   line-height: 66.667%;
@@ -49,6 +48,11 @@ h5, p {
   font-size: 1.43vw;
   font-weight: 400;
   line-height: 120%;
+  a {
+    font-size: 1.43vw;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
 
 h5 {
@@ -63,7 +67,7 @@ h6 {
 }
 
 p {
-  color: var(--resume-black-color);
+  // color: var(--resume-black-color);
 }
 
 ul li {
@@ -100,6 +104,10 @@ a {
   h5, p {
     font-size: 20px;
     line-height: 24px;
+    a {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   h6 {
     font-size: 20px;
@@ -133,6 +141,10 @@ a {
   h5, p {
     font-size: 16px;
     line-height: 18px;
+    a {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
   h6 {
     font-size: 20px;

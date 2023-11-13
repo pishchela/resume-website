@@ -1,18 +1,18 @@
 import { Component, Input } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { SocialItem, SocialType } from "../../core/models/resume.model";
+import { SocialItem, SocialType } from "../../../core/models/resume.model";
 
 // TODO: rename to subheader;
 @Component({
-  selector: 'resume-header-section',
-  templateUrl: './header-section.component.html',
-  styleUrls: ['./header-section.component.scss'],
+  selector: 'resume-section-header',
+  templateUrl: './section-header.component.html',
+  styleUrls: ['../section-layout.component.scss'],
   imports: [
     CommonModule,
   ],
   standalone: true,
 })
-export class HeaderSectionComponent {
+export class SectionHeaderComponent {
   public socialType = SocialType;
   @Input()
   public header!: string;

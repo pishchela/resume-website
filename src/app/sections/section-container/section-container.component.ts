@@ -9,5 +9,8 @@ import { Component, HostBinding, Input } from "@angular/core";
 export class SectionContainerComponent {
   @Input()
   @HostBinding('style.background-color')
-  backgroundColor!: string;
+  backgroundColor!: string | undefined;
+  @Input()
+  @HostBinding('style.color')
+  color!: string | undefined;
 }

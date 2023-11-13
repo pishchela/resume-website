@@ -11,7 +11,6 @@ import { Subscription } from "rxjs";
 
 import { HeaderComponent } from "./layout/header/header.component";
 import { AccordionHeaderComponent } from "./shared/components/accordion/accordion-header/accordion-header.component";
-import { HeaderSectionComponent } from "./sections/header-section/header-section.component";
 import { SectionContainerComponent } from "./sections/section-container/section-container.component";
 import { DataService } from "./core/services/data.service";
 import { Resume } from "./core/models/resume.model";
@@ -20,11 +19,21 @@ import {
   AccordionContainerComponent
 } from "./shared/components/accordion/accordion-container/accordion-container.component";
 import { AccordionBodyComponent } from "./shared/components/accordion/accordion-body/accordion-body.component";
+import { SectionFooterComponent } from "./sections/section-layout/section-footer/section-footer.component";
+import { SectionHeaderComponent } from "./sections/section-layout/section-header/section-header.component";
+import { SectionAdditionalComponent } from "./sections/section-additional/section-additional.component";
 
 const accordionComponents = [
   AccordionContainerComponent,
   AccordionHeaderComponent,
   AccordionBodyComponent,
+];
+
+const sectionComponents = [
+  SectionHeaderComponent,
+  SectionContainerComponent,
+  SectionFooterComponent,
+  SectionAdditionalComponent,
 ];
 
 @Component({
@@ -35,9 +44,8 @@ const accordionComponents = [
   imports: [
     CommonModule,
     HeaderComponent,
-    HeaderSectionComponent,
-    SectionContainerComponent,
     accordionComponents,
+    sectionComponents,
   ],
   providers: [
     DataService,

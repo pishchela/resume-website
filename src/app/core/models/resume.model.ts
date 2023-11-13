@@ -2,11 +2,13 @@
 export interface Resume {
   fullName: string;
   header: string;
+  footer: string;
   socialItems: SocialItem[]
   // TODO: add here links to sections;
   nav: string[];
   headingSection: HeadingSection;
   sections: ItemsSection[];
+  additionalSection?: AdditionalSection;
 }
 
 export enum SocialType {
@@ -24,6 +26,11 @@ export interface SocialItem {
 interface Section {
   title: string;
   backgroundColor: string;
+  color: string;
+}
+
+interface AdditionalSection extends Section {
+  items: string[];
 }
 
 interface HeadingSection extends Section {

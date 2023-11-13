@@ -72,6 +72,9 @@
         line-height: 20px;
       }
     }
+    &__copyright {
+      flex-direction: row;
+    }
   }
 }
 

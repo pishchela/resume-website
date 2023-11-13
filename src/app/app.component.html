@@ -6,16 +6,18 @@
     [fullName]="data.fullName">
   </resume-header>
   <section>
-    <resume-header-section
+    <resume-section-header
       [header]="data.header"
       [socialItems]="data.socialItems">
-    </resume-header-section>
+    </resume-section-header>
   </section>
 
   <section
     id="{{data.headingSection.title}}"
     *ngIf="data.headingSection as section">
-    <resume-section-container [backgroundColor]="section.backgroundColor">
+    <resume-section-container
+      [color]="section?.color"
+      [backgroundColor]="section?.backgroundColor">
 
       <ng-container slot="header">{{section.title}}</ng-container>
       <div class="resume__heading_content">
@@ -28,7 +30,9 @@
   <!---TODO: use here new control flow 'for' --->
   <section *ngFor="let section of data.sections"
            id="{{section.title}}">
-    <resume-section-container [backgroundColor]="section.backgroundColor">
+    <resume-section-container
+      [color]="section?.color"
+      [backgroundColor]="section?.backgroundColor">
       <ng-container slot="header">{{section.title}}</ng-container>
       <div class="resume__section_content">
         <div class="resume__section_content__item"
@@ -47,11 +51,27 @@
       </div>
     </resume-section-container>
   </section>
-  <section>
-    <resume-header-section
-      [header]="data.header"
-      [socialItems]="data.socialItems">
-    </resume-header-section>
+
+  <section
+    *ngIf="data.additionalSection"
+    id="{{data.additionalSection.title}}">
+    <resume-section-container
+      [color]="data.additionalSection?.color"
+      [backgroundColor]="data.additionalSection?.backgroundColor">
+      <ng-container slot="header">{{data.additionalSection.title}}</ng-container>
+      <div class="resume__section_content">
+        <resume-section-additional
+          [items]="data.additionalSection.items"
+        ></resume-section-additional>
+      </div>
+    </resume-section-container>
   </section>
 
+  <footer>
+    <resume-section-footer
+      [header]="data.footer"
+      [fullName]="data.fullName"
+      [socialItems]="data.socialItems">
+    </resume-section-footer>
+  </footer>
 </div>

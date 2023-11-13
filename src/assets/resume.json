@@ -1,6 +1,7 @@
 {
   "fullName": "Vladislav Paley",
   "header" : "Seeking a leadership role focused on sustainable engineering and management.",
+  "footer": "Don’t hesitate to contact me if you need further information, let’s cooperate",
   "socialItems": [
     {
       "type": "email",
@@ -235,10 +236,23 @@
           "subheader": "November 2012 to July 2014"
         }
       ]
-    },
-    {
-      "title": "Additional skills & Knowledge",
-      "backgroundColor": "#E3EEE9"
     }
-  ]
+  ],
+  "additionalSection": {
+    "title": "Publications",
+    "backgroundColor": "#19201F",
+    "color": "#FFF",
+    "items": [
+      "S. S. K. S. Narayanan, X. Wang, J. Paul, V. Paley, Z. Weng, L. Ye, Y. Zhong. Disinfection and Electrostatic Recovery of N95 Respirators by Corona Discharge for Safe Reuse. Environmental Science & Technology, 2021. <a href=\"https://doi.org/10.1021/acs.est.1c02649\" target=\"_blank\">https://doi.org/10.1021/acs.est.1c02649</a>",
+      "A. P. Kondratov, E. P. Cherkasov, V. Paley, A. A. Volinsky. Recording, Storage, and Reproduction of Information on Polyvinyl Chloride Films Using Shape Memory Effects. Polymers, 13(11), 2021. <a href=\"https://doi.org/10.3390/polym13111802\" target=\"_blank\">https://doi.org/10.3390/polym13111802</a>",
+      "A. P. Kondratov, E. P. Cherkasov, V. Paley, A. A. Volinsky. Macrostructure of Anisotropic Shape Memory Polymer Films Studied by the Molecular Probe Method. Journal of Applied Polymer Science, 138(15), 2020. <a href=\"https://doi.org/10.1002/app.50176\" target=\"_blank\">https://doi.org/10.1002/app.50176</a",
+      "Y. Zhong, C. Wang , J. Wang , H. Ma , S. Krishnamoorthy , V. Paley, Z. Weng, S. Jin. Spontaneous formation of sub-4 nm nanocrystalline alloy via polymorphic phase transformation. Materials Research Letters, 8(11), 2020. <a href=\"https://doi.org/10.1080/21663831.2020.1791272\" target=\"_blank\">https://doi.org/10.1080/21663831.2020.1791272</a>",
+      "B. Hu, K. Wang, P. Hu, S. Li, J. Deng, Y. Zuo, H. Xing, P. Feng, V. Paley, A.A. Volinsky. Fracture behavior of the La-doped molybdenum-titanium-zirconium alloy. Materials Science and Engineering: A, 759, 2019. <a href=\"https://doi.org/10.1016/2Fj.msea.2019.05.031\" target=\"_blank\">https://doi.org/10.1016/2Fj.msea.2019.05.031</a>",
+      "F. Yang, L. You, Z. Guo, V. Paley, A.A. Volinsky. Coercivity Enhancement and Grain Refinement in Nd-Fe-B Sintered Magnets with Pyrite Doping by Jet Milling. Journal of Magnetism and Magnetic Materials, 469, 2019. <a href=\"https://doi.org/10.1016/j.jmmm.2018.08.057\" target=\"_blank\">https://doi.org/10.1016/j.jmmm.2018.08.057</a>",
+      "H. Zhao, J. Xie, T. Liang, A. Mao, A. Wang, Y. Chen, D. Ma, V. Paley, A.A. Volinsky. Effects of Thickness Ratios and Sputtering Mode on the Structural, Electrical and Optical Properties of Bilayer Molybdenum Thin Films. AIP Advances, 8(9), 2018. <a href=\"https://doi.org/10.1063/1.5043437\" target=\"_blank\">https://doi.org/10.1063/1.5043437</a>",
+      "C. Chen, W. Wang, Z. Guo, C. Sun, A.A. Volinsky, V. Paley. Annealing Effects on Microstructure and Mechanical Properties of Ultrafine-Grained Al Composites Reinforced with Nano-Al2O3 by Rotary Swaging. Journal of Materials Engineering and Performance 27(4), 2018. <a href=\"https://doi.org/10.1007/s11665-018-3301-2\" target=\"_blank\">https://doi.org/10.1007/s11665-018-3301-2</a>",
+      "F. Yang, Y. Sui, C. Chen, S. Ye, P. Li, Z. Guo, V. Paley, A.A. Volinsky. Sulfur Doping Effect on Microstructure and Magnetic Properties of Nd-Fe-B Sintered Magnets. Journal of Magnetism and Magnetic Materials, 446, 2018. <a href=\"https://doi.org/10.1016/j.jmmm.2017.09.023\" target=\"_blank\">https://doi.org/10.1016/j.jmmm.2017.09.023</a>",
+      "C. Zhang, B. Lu, H. Wang, Z. Guo, V. Paley, A.A. Volinsky. Vacuum Pressureless Sintering of Ti-6Al-4V Alloy with Full Densification and Forged-Like Mechanical Properties. Journal of Materials Engineering and Performance, 27(1), 2018. <a href=\"https://doi.org/10.1007/s11665-017-3019-6\" target=\"_blank\">https://doi.org/10.1007/s11665-017-3019-6</a>"
+    ]
+  }
 }
