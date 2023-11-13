@@ -113,7 +113,8 @@ export class AppComponent implements OnInit, OnDestroy {
           pin: true,
           pinSpacing: false,
           // TODO: figure out here
-          start: `center ${headerHeight}px`,
+          // start: `center ${headerHeight}px`,
+          start: `-45px`,
           end: "max",
         }
       });
