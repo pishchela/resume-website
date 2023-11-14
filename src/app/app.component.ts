@@ -18,15 +18,23 @@ import { HTMLUtils } from "./shared/utils/html.utils";
 import {
   AccordionContainerComponent
 } from "./shared/components/accordion/accordion-container/accordion-container.component";
-import { AccordionBodyComponent } from "./shared/components/accordion/accordion-body/accordion-body.component";
 import { SectionFooterComponent } from "./sections/section-layout/section-footer/section-footer.component";
 import { SectionHeaderComponent } from "./sections/section-layout/section-header/section-header.component";
 import { SectionAdditionalComponent } from "./sections/section-additional/section-additional.component";
+import { SectionSkillsComponent } from "./sections/section-skills/section-skills.component";
+import {
+  AccordionBodyListComponent
+} from "./shared/components/accordion/accordion-body/accordion-body-list/accordion-body-list.component";
+import {
+  AccordionBodyListComplexComponent
+} from "./shared/components/accordion/accordion-body/accordion-body-list-complex/accordion-body-list-complex.component";
+import { SectionTypes } from "./core/models/section.model";
 
 const accordionComponents = [
   AccordionContainerComponent,
   AccordionHeaderComponent,
-  AccordionBodyComponent,
+  AccordionBodyListComponent,
+  AccordionBodyListComplexComponent
 ];
 
 const sectionComponents = [
@@ -34,6 +42,7 @@ const sectionComponents = [
   SectionContainerComponent,
   SectionFooterComponent,
   SectionAdditionalComponent,
+  SectionSkillsComponent,
 ];
 
 @Component({
@@ -53,6 +62,7 @@ const sectionComponents = [
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit, OnDestroy {
+  public sectionType = SectionTypes;
   /// TODO: https://angular.io/guide/prerendering
   public data!: Resume;
 
