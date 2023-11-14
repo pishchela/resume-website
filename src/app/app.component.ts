@@ -93,31 +93,45 @@ export class AppComponent implements OnInit, OnDestroy {
     return stStart;
   }
 
+  // https://gsap.com/community/forums/topic/35927-jumpy-text-and-scrolltrigger-markers-with-pin-in-scroller/
   private _registerGSAP(): void {
     const headerHeight = HTMLUtils.getHeaderHeight();
     // Register the ScrollTrigger with gsap
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.normalizeScroll({target: ".resume", allowNestedScroll: true});
 
     //Loop over all the sections and set animations
     gsap.utils.toArray("section").forEach((section: any, index: number) => {
 
       // Give the backgrounds some random images
       // section.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
-
-      // console.warn(section);
-      gsap.to(section, {
-        scrollTrigger: {
-          trigger: section,
-          // TODO: delete markers;
-          markers: true,
-          pin: true,
-          pinSpacing: false,
-          // TODO: figure out here
-          // start: `center ${headerHeight}px`,
-          start: `-45px`,
-          end: "max",
-        }
+      ScrollTrigger.create({
+        trigger: section,
+        start: "top top",
+        pin: true,
+        pinSpacing: false,
+        markers : true,
+        scroller:".resume",
       });
+      // console.warn(section);
+      // gsap.to(section, {
+      //   scrollTrigger: {
+      //     trigger: section,
+      //     // TODO: delete markers;
+      //     markers: true,
+      //     pin: true,
+      //     pinSpacing: false,
+      //     scroller: '.resume',
+      //     // TODO: figure out here
+      //     // start: `center ${headerHeight}px`,
+      //     // start: `-45px`,
+      //     start: "top top",
+      //     // end: 'max',
+      //   }
+      // });
+    });
+    ScrollTrigger.create({
+      snap: 1 / 4
     });
   }
 }
