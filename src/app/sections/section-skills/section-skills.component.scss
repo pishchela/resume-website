@@ -1,0 +1,84 @@
+@import "../../../assets/styles/variables";
+
+$skillBorder: 1px solid rgba(25, 32, 31, 0.20);
+
+:host {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin-bottom: 9.93vw;
+  }
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    &__header {
+      width: calc(100% - var(--sections-content-max-width-default));
+      h6 {
+        padding-bottom: 0.71vw;
+        border-bottom: $skillBorder;
+      }
+    }
+    &__values {
+      width: var(--sections-content-max-width-default);
+      p {
+        padding-bottom: 0.71vw;
+        height: fit-content;
+        border-bottom: $skillBorder;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &__multiple {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+          &:after {
+            content: ",";
+            flex: auto;
+          }
+          &:last-child {
+            &:after {
+              content: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthLargest) {
+  .skills {
+    &__header {
+      h6 {
+        padding-bottom: 10px;
+      }
+    }
+    &__values {
+      margin-bottom: 100px;
+      p {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 139px;
+  }
+  p {
+    margin-bottom: 35px;
+  }
+}
+
+
+@media screen and (max-width: $screenWidthDesktop) {
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  h3 {
+    margin-bottom: 40px;
+  }
+}

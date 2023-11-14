@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
-import { ComplexList } from "../../../../../core/models/resume.model";
 import { CommonModule } from "@angular/common";
+import { ComplexList } from "../../../../../core/models/sections/section-items-descritption.model";
 
 @Component({
   standalone: true,
