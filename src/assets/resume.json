@@ -60,14 +60,20 @@
             ]
           },
           {
-            "header": "Master of Science",
-            "subheader": "in Mechanical Engineering (MSME) - University of South Florida,\u2028Tampa, FL - 2020",
-            "list": []
+            "header": "Bachelor of Science",
+            "subheader": "in Mechanical Engineering (BSME) - University of South Florida, Tampa, FL - 2017",
+            "list": [
+              "Experienced in Laser cutting, 3D printing, Computer-Aided Design, and Finite Element Modeling",
+              "Trained in lab work, tag out lock out regulations, and safety-first prioritization while gaining a hands-on experience"
+            ]
           },
           {
             "header": "Associate of Arts",
             "subheader": "in Engineering (AA) - Bucks County Community College,\u2028Newtown, PA - 2014",
-            "list": []
+            "list": [
+              "Co-founder of the Society of Bucks Engineers, the first professional engineering society on campus",
+              "Established a competition between neighboring colleges for various drone applicationsf"
+            ]
           }
         ]
       }
@@ -92,22 +98,39 @@
           {
             "header": "Research Assistant",
             "subheader": "University of South Florida, Tampa, FL - November 2017 to August 2021",
-            "list": []
+            "list": [
+              "Responsible for design, manufacturing, and testing of multiple active and passive robots for ADLs based on customer needs, disabilities, and specific User Requirement Specifications (URS)",
+              "Established product development plans, manufacturing strategy, timelines, milestones, and deliverables; determined key partners, activities, resources, cost structure, revenue streams, and value propositions; performed risk assessments; conducted FMEAs and statistical analysis for prototype performance",
+              "Researched novel corona-discharge-based sterilization techniques; developed smart stimuli-responsive materials; designed origami-based soft robots for energy harvesting, humidity sensing, and 4D printing; increased polymer film production by 10 times"
+            ]
           },
           {
             "header": "Teaching Assistant",
             "subheader": "University of South Florida, Tampa, FL - January 2018 to May 2021",
-            "list": []
+            "list": [
+              "Educated undergraduate and graduate students in key concepts of courses including Machine Design, Mechanical Engineering Lab, Capstone Design, Mechanics of Materials, and Applied Elasticity",
+              "Mentored students one-on-one to identify weaknesses and close gaps in their understanding of the material; organized and led live problem-solving sessions to help students connect theory with real-world problems; seamlessly adjusted to a COVID-era instruction environment",
+              "Effectively communicated expectations to students; followed up with professors and advisors to ensure complex theories were demonstrated in innovative and consistent ways; proactively initiated contact with underachieving students to safeguard progress throughout the semester"
+            ]
           },
           {
             "header": "NSF IRES Research Grant Participant",
             "subheader": "University of Science and Technology, Beijing, China - May 2017 to August 2018",
-            "list": []
+            "list": [
+              "Collaborated with multi-functional teams to generate groundbreaking concepts in creative and innovative ways; experimented with the manufacturing of novel superconductors via Hydrogen embrittlement of a finely polished Iron-alloy",
+              "Provided expertise for numerous manuscripts on data analysis, charts and figures, flow, organization, grammar, submission quality; directly influenced a number of publications which have been released in renowned metallic, magnetic, and polymer-based journals",
+              "Assimilated quickly into the Chinese culture including purchasing a vehicle and making local friends; prioritized between multiple simultaneous projects across 3 universities, each in their own respective cities"
+            ]
           },
           {
             "header": "Engineering Intern",
             "subheader": "Medcomp Inc, Harleysville, PA - May 2016 to August 2016",
-            "list": []
+            "list": [
+              "Performed design verification and validation of various medical devices; sorted through archives of data to determine relevancy of documentation for currently modified product lines",
+              "Assisted engineers on conducting FMEAs; performed failure testing for batch samples of high-volume products including tensile, bending, pressure, and time degradation/aging",
+              "Designed and facilitated the production of several new tools and tool fixtures; utilized injection molding for production and subsequent assembly of new devices; verified IQ/OQ/PQ was conducted properly on new tools",
+              "Developed an SOP for QA to test zero-clearance gaps in dilators following ISO standards; verified test results for consistency across various internal and competitors’ product lines"
+            ]
           }
         ]
       }
@@ -131,62 +154,114 @@
           {
             "header": "Cold Plasma Sterilization and Static Recharge Devices",
             "subheader": "Design Lead - 2020 to 2021",
-            "list": []
+            "list": [
+              "Designed multiple devices to sterilize surfaces by using cold plasma generated from a high voltage corona discharge",
+              "Handheld device is primarily 3D printed and features a removable battery, a transformer, and a tungsten needle",
+              "Enclosed device is designed for rapid face masks sterilization and recharge using conductive polymer and ultra-thin tungsten wire",
+              "Featured in local media including <a href='https://mms.tveyes.com/transcript.asp?StationID=4030&DateTime=4%2f29%2f2020+4%3a33%3a23+AM&PlayClip=true' target='_blank'>Bay News 9</a>, <a href='https://www.abcactionnews.com/news/coronavirus/usf-researchers-helping-fight-coronavirus-with-projects-from-contact-tracing-to-sterilizing-masks' target='_blank'>ABC Action News</a>, <a href='https://www.83degreesmedia.com/features/USF-reseracher-tips-for-wearing-face-masks-051220.aspx' target='_blank'>83 degrees media</a>, <a href='https://www.usf.edu/news/2020/usf-engineer-and-biologist-unite-to-fight-coronavirus-with-corona-discharge.aspx' target='_blank'>USF Newsroom</a>, and <a href='https://www.wfla.com/news/hillsborough-county/federal-grant-helps-usf-researchers-develop-technology-to-stop-virus-spread/' target='_blank'>News Channel 8</a>"
+            ]
           },
           {
             "header": "Here, There, and Everywhere",
             "subheader": "Team Lead - 2020",
-            "list": []
+            "list": [
+              "Hacking for Defense (H4D) initiative project sponsored by the Naval Surface Warfare Center in Crane, IN (NSWC Crane)",
+              "Interviewed numerous active and retired military personnel to understand the full breaching process and associated risks",
+              "Built the Mission Model Canvas, iterated the value proposition, & pivoted the problem to reflect the real issues being faced",
+              "Presented a minimum viable product (MVP) to beneficiaries and stakeholders with cost and 3-year technical readiness timeline "
+            ]
           },
           {
             "header": "Image and Video Processing Projects",
             "subheader": "Individual Projects - 2019",
-            "list": []
+            "list": [
+              "Segmented an image into foreground objects, each uniquely shaded, and background with matching shading",
+              "Tracked objects in a continuous video, displaying dots around each object as it moves across the screen",
+              "User could select and replace any part of an image with a different image scaled to fit the selected area",
+              "Utilized deep-learning to visually recognize activities of daily life (ADLs) with a goal to teach an assistant robot to repeat them"
+            ]
           },
           {
             "header": "Wheelchair Mounted Arm Elevating Device (iRise)",
             "subheader": "Project Lead - 2018 to 2019",
-            "list": []
+            "list": [
+              "Designed an armrest-device to assist individuals with atrophied arm muscles to reach objects, especially those on high shelves",
+              "Entirely passive with solely an elastic band to activate vertical actuation, no electrical or power components",
+              "Three degrees of freedom (Dof): Vertical, to lift arm; Horizontal, to reach forward; and a Revolute, to reach around",
+              "Various testing of non-linear elastic bands was conducted with a deep dive into the data analysis"
+            ]
           },
           {
             "header": "Manus Arm Robotic Assistant's Arm Lift (MARA aLift)",
             "subheader": "Project Lead - 2018",
-            "list": []
+            "list": [
+              "MARA is a robot with 2 belt-driven robotic arms, each containing 6 Dof, fixed onto a mobile base of an additional 2 Dof",
+              "aLift added a new Dof to each arm (up/down) to allow MARA to reach higher objects while remaining stable on its base",
+              "Project involved worm-gears, gear ratios, ball-screws, roller bearings, as well as 3D printed housing components",
+              "Increased the maximum reachable height and work-space by approximately 35%"
+            ]
           },
           {
             "header": "Robot and Simulator for End Effector Tracking and Singularity Avoidance",
             "subheader": "Project Lead - 2018",
-            "list": []
+            "list": [
+              "Designed a robot with 6 Dof that could pick and place objects with no two identical consecutive joints",
+              "Built a prototype which could be manipulated to test range and motion",
+              "Programmed a simulator which could show the optimal path and avoid singularity (hitting or passing through itself)",
+              "Simulator could test any robot with any number of joints in a single chain, not just the one built in this project"
+            ]
           },
           {
             "header": "Active Clothing with Embedded Sensors and Live Monitoring",
             "subheader": "Team Member - 2017",
-            "list": []
+            "list": [
+              "36-hour project during the MD5 SOFWERX Hackathon involving military clothing with advanced sensors and live data analysis.",
+              "Worked with students and other professionals to develop an online system for live responses from a central command center",
+              "Theoretical applications involved all branches of the military, professional athletes, and disabled/elderly individuals"
+            ]
           },
           {
             "header": "Automatic Table Operation for Wheelchairs",
             "subheader": "Design Lead - 2017",
-            "list": []
+            "list": [
+              "Studied the issues that a person with cerebral palsy faces when confronted with routine tasks",
+              "Worked with partners to develop a versatile table which could attach to any wheelchair",
+              "Printed and fabricated the system with a program developed for testing functionality"
+            ]
           },
           {
             "header": "Lab Racing and Distance Sensing Robot",
             "subheader": "Controls Programmer - 2017",
-            "list": []
+            "list": [
+              "Given scrap parts and a shell program, developed and raced a robot which followed a set criterion",
+              "Devised a control system which was simpler than the shell program provided with reliable operation"
+            ]
           },
           {
             "header": "Microgravity Food Production System",
             "subheader": "Design Lead - 2016",
-            "list": []
+            "list": [
+              "Designed, analyzed, and partially fabricated a food production system with individual capsules for future deep-space missions",
+              "The system operates by utilizing Artificial Gravity via centripetal motion and paired with a unique, Golden Ratio-based design "
+            ]
           },
           {
             "header": "Quadrotor Design, Automation, and Racing Competitions",
             "subheader": "Event Organizer and Team Member - 2012 - 2014",
-            "list": []
+            "list": [
+              "Established and organized a bi-annual multi-college quadrotor competition focused on drone design and autonomous control",
+              "Due to the unique designs of the quadrotor components, most were 3D printed using a lab-built FDM printer",
+              "Competitions are still ongoing with more teams, schools, and colleges producing new, unique quadrotor drones "
+            ]
           },
           {
             "header": "NASA’s Reduced Gravity Education Flight Program (MicroG NExT Program)",
             "subheader": "2011 to 2012",
-            "list": []
+            "list": [
+              "Conceived of and constructed a robot to maneuver in zero gravity conditions and manipulate objects simultaneously",
+              "Collaborated with teachers and industry experts to determine the best setup for pneumatic control in space",
+              "Robot achieved successful maneuverability and control when tested on NASA's reduced-gravity aircraft, the Vomit Comet"
+            ]
           }
         ]
       }
@@ -235,7 +310,17 @@
           },
           {
             "header": "Society of Bucks Engineers",
-            "subheader": "November 2012 to July 2014"
+            "subheader": "November 2012 to July 2014",
+            "complexList": [
+              {
+                "header": "Co-founder",
+                "list": [
+                  "Established the first professional engineering society on campus, still active and growing today",
+                  "Began a quadrotor competition between neighboring colleges for various drone applications",
+                  "Set up a working lab to modify, test, and fabricate parts for drones and other future robots"
+                ]
+              }
+            ]
           }
         ]
       }
@@ -245,7 +330,115 @@
       "backgroundColor": "#E3EEE9",
       "color": "#19201F",
       "type": "skills",
-      "data": ""
+      "data": {
+        "skills": [
+          {
+            "key": "Certifications",
+            "flow": "single",
+            "values": [
+              "Engineer In Training (EIT # 17-725-17)",
+              "Associate Safety Professional (ASP-37020)",
+              "First Aid, CPR, AED (AHA # 226019179198)",
+              "Effective Chemical Management (EIQ # C111058)",
+              "Liquid Nitrogen Safety (GFUGAUTPTFMT)",
+              "DOT & IATA Hazmat/Dangerous Goods Shipping (125472)",
+              "HAZWOPER First Responder (29 CFR 1910.120)",
+              "Certified SolidWorks Associate (CSWA # C-9BBGEYCYBP)"
+            ]
+          },
+          {
+            "key": "Spoken Languages",
+            "flow": "single",
+            "values": [
+              "Russian",
+              "Ukrainian",
+              "English"
+            ]
+          },
+          {
+            "key": "Software",
+            "flow": "multiple",
+            "values": [
+              "SolidWorks (CSWA Certified),",
+              "Microsoft Office",
+              "ANSYS",
+              "COMSOL",
+              "C++/C#",
+              "Java",
+              "HTML",
+              "MATLAB",
+              "Python"
+            ]
+          },
+          {
+            "key": "Equipment",
+            "flow": "multiple",
+            "values": [
+              "Scanning Electron Microscope (SEM)",
+              "Atomic Force Microscope (AFM)",
+              "Focused Ion Beam (FIB)",
+              "Profilometer",
+              "Electron-Beam Deposition",
+              "X-Ray Diffractometer (XRD)",
+              "Cleanroom",
+              "Sputtering",
+              "Stereolithography (SLA)",
+              "3D Printers incl.",
+              "Lithography/Metrology",
+              "Fused Deposition Modeling (FDM)",
+              "Digital Light Projection (DLP)",
+              "Inkjet/Polyjet"
+            ]
+          },
+          {
+            "key": "Entrepreneurial",
+            "flow": "multiple",
+            "values": [
+              "Business Model Canvas",
+              "Value Proposition (VP)",
+              "Market Research",
+              "Customer Development",
+              "Problem-Solution Fit",
+              "Product-Market Fit",
+              "Minimum Viable Product (MVP)",
+              "Cost Flow Analysis",
+              "Competitive Analysis",
+              "Beneficiary Procurement",
+              "Investor Pitch Presentation",
+              "Gantt Charts"
+            ]
+          },
+          {
+            "key": "Regulations",
+            "flow": "multiple",
+            "values": [
+              "Occupational Safety and Health Administration (OSHA & CalOSHA)",
+              "Department of Transportation (DOT)",
+              "International Air Transport Association (IATA)",
+              "Environmental Protection Agency (US EPA, CalEPA & EU EPA)",
+              "Department of Toxic Substances Control (DTSC)",
+              "Resource Conservation and Recovery Act (RCRA)",
+              "Drug Enforcement Administration (DEA)",
+              "Clean Air Act (CAA)",
+              "Bay Area Air Quality Mgmt District (BAAQMD)",
+              "Code of Federal Regulations (CFR)",
+              "California Code of Regulations (CCR)"
+            ]
+          },
+          {
+            "key": "Standards",
+            "flow": "multiple",
+            "values": [
+              "ISO9001 (Quality)",
+              "IATF16949 (Automotive Quality)",
+              "ISO45001 (Health & Safety)",
+              "ISO14001 (Environment)",
+              "Hazard Communication standard",
+              "Hazardous Waste and Emergency Response standard"
+            ]
+          }
+        ]
+      }
     },
     {
       "title": "Publications",
