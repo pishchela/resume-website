@@ -34,15 +34,13 @@
           </resume-section-container>
         </section>
 
-        <resume-section-container
+        <resume-section-skills
+          [data]="section?.data"
           *ngSwitchCase="sectionType.SKILLS"
           [color]="section?.color"
           [backgroundColor]="section?.backgroundColor">
           <ng-container slot="header">{{section.title}}</ng-container>
-          <div class="resume__section_content">
-            <resume-section-skills></resume-section-skills>
-          </div>
-        </resume-section-container>
+        </resume-section-skills>
 
 
         <resume-section-container
@@ -111,7 +109,6 @@
           </div>
         </resume-section-container>
       </ng-container>
-
 
     </section>
 

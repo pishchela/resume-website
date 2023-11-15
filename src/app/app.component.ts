@@ -20,7 +20,7 @@ import {
 } from "./shared/components/accordion/accordion-container/accordion-container.component";
 import { SectionFooterComponent } from "./sections/section-layout/section-footer/section-footer.component";
 import { SectionHeaderComponent } from "./sections/section-layout/section-header/section-header.component";
-import { SectionAdditionalComponent } from "./sections/section-additional/section-additional.component";
+import { SectionAdditionalComponent } from "./sections/content/section-additional/section-additional.component";
 import { SectionSkillsComponent } from "./sections/section-skills/section-skills.component";
 import {
   AccordionBodyListComponent
@@ -44,6 +44,8 @@ const sectionComponents = [
   SectionAdditionalComponent,
   SectionSkillsComponent,
 ];
+
+// https://sites.google.com/view/vladislav-paley-cv/home
 
 @Component({
   selector: 'app-root',

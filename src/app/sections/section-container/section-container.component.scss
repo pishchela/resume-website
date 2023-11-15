@@ -1,57 +1,34 @@
 @import "../../../assets/styles/variables";
 
-:host {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--paddding-side-size) var(--paddding-side-size) 14.29vw var(--paddding-side-size);
-  background-color: var(--resume-section-default-color);
-  //h3 {
-  //  margin-top: 0.71vw;
-  //}
-  .section__content {
-    width: 100%;
-    max-width: 63.35vw;
-  }
+.section__content {
+  width: 100%;
+  max-width: var(--sections-content-max-width-default);
 }
 
 @media screen and (max-width: $screenWidthLargest) {
-  :host {
-    padding-bottom: 200px;
-    //h3 {
-    //  margin-top: 10px;
-    //}
-    .section__content {
-      max-width: 887px;
-    }
+  .section__content {
+    max-width: var(--sections-content-max-width-largest);
   }
 }
 
 @media screen and (max-width: $screenWidthDesktopLarge) {
-  :host {
-    .section__content {
-      padding-left: 100px;
-    }
+  .section__content {
+    // padding-left: 100px;
   }
 }
 
 @media screen and (max-width: $screenWidthDesktop) {
-  :host {
-    .section__content {
-      padding-left: 0;
-      max-width: 63.29vw;
-    }
+  .section__content {
+    padding-left: 0;
+    max-width: var(--sections-content-max-width-desktop);
   }
 }
 
 @media screen and (max-width: $screenWidthTabletSmall) {
-  :host {
-    padding-bottom: 80px;
-    flex-direction: column;
-    h3 {
-      margin-bottom: 40px;
-    }
-    .section__content {
-      max-width: 100%;
-    }
+  h3 {
+    margin-bottom: 40px;
+  }
+  .section__content {
+    max-width: var(--sections-content-max-width-tablet-small);
   }
 }

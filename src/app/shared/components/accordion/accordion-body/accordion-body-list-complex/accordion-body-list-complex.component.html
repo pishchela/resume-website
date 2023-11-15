@@ -2,8 +2,8 @@
   <div class="complex-list__item">
     <h6>{{item.header}}</h6>
     <div>
-      <p *ngFor="let list of item.list">
-        {{list}}
+      <p *ngFor="let list of item.list"
+         [innerHTML]="list">
       </p>
     </div>
   </div>
