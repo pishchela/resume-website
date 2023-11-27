@@ -166,4 +166,10 @@ export class AppComponent implements OnInit, OnDestroy {
     //   snap: 1 / 4
     // });
   }
+
+
+
+
+
+
 }
