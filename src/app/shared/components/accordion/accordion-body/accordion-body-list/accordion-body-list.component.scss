@@ -2,24 +2,39 @@
 
 .body-list {
   padding-left: 4.5vw;
-}
-div {
-  border-bottom: 0.071vw solid var(--resume-hr-color);
-  padding: var(--paddding-side-size) 0;
-  &:first-child {
-    padding-top: 0;
-  }
-  &:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
+  p {
+    border-bottom: 0.071vw solid var(--resume-hr-color);
+    padding: var(--paddding-side-size) 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
   }
 }
 
 @media screen and (max-width: $screenWidthLargest) {
-  div {
-    border-bottom-width: 1px;
-  }
   .body-list {
     padding-left: 63px;
+    p {
+      border-bottom-width: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktop) {
+  .body-list {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  .body-list {
+    padding-left: 30px;
+    p {
+      padding-top: 40px;
+    }
   }
 }

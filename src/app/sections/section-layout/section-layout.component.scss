@@ -1,0 +1,141 @@
+@import "../../../assets/styles/variables";
+
+.section {
+  padding: 0 var(--paddding-side-size) 1.1vw var(--paddding-side-size);
+  background-color: var(--resume-black-color);
+
+  &__header {
+    padding-top: 8.57vw;
+  }
+
+  &__header,
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    &__image {
+      width: 14.8vw;
+      height: 19.5vw;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__social {
+    display: flex;
+    flex-flow: column wrap;
+    height: 5vw;
+    align-items: flex-start;
+    width: fit-content;
+  }
+  &__copyright {
+    display: flex;
+    flex-direction: row-reverse;
+    p {
+      color: rgba(255, 255, 255, 0.40);
+    }
+  }
+}
+
+h1 {
+  max-width: 63.36vw;
+  padding-bottom: 18.64vw;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--resume-white-color);
+  margin-right: 3.36vw;
+  margin-bottom: 1.07vw;
+}
+
+@media screen and (max-width: $screenWidthLargest) {
+  .section {
+    padding-bottom: 15px;
+    &__header {
+      padding-top: 120px;
+    }
+    &__social {
+      height: 70px;
+    }
+  }
+  h1 {
+    max-width: 887px;
+    padding-bottom: 261px;
+  }
+
+  a {
+    margin-right: 47px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    max-width: 684px;
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktop) {
+  h1 {
+    padding-bottom: 110px;
+    max-width: 481px;
+  }
+  .section {
+    &__header,
+    &__footer {
+      &__image {
+        min-width: 148px;
+        min-height: 174px;
+      }
+    }
+    &__copyright {
+      padding-top: 30px;
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  .section {
+    &__header {
+      padding-top: 65px;
+    }
+    &__header,
+    &__footer {
+      flex-direction: column-reverse;
+      &__image {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthMobile) {
+  h1 {
+    padding-bottom: 70px;
+  }
+  .section {
+    &__social {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      flex-flow: column;
+      a {
+        width: 100%;
+        margin-bottom: 10px;
+        &:nth-child(2) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

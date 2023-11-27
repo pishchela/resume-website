@@ -1,51 +1,123 @@
 <!--TODO: use HTML5 tags like 'section'-->
-<div class="resume" *ngIf="data">
+<ng-container *ngIf="data">
   <resume-header
     (navClicked)="scrollToSection($event)"
     [nav]="data.nav"
     [fullName]="data.fullName">
   </resume-header>
-  <section>
-    <resume-header-section
-      [header]="data.header"
-      [socialItems]="data.socialItems">
-    </resume-header-section>
-  </section>
+  <div class="resume">
+    <section>
+      <resume-section-header
+        [header]="data.header"
+        [socialItems]="data.socialItems">
+      </resume-section-header>
+    </section>
 
-  <section
-    id="{{data.headingSection.title}}"
-    *ngIf="data.headingSection as section">
-    <resume-section-container [backgroundColor]="section.backgroundColor">
+    <!---TODO: use here new control flow 'for' and 'switch' as well--->
+    <section *ngFor="let section of data.sections"
+             id="{{section.title}}">
 
-      <ng-container slot="header">{{section.title}}</ng-container>
-      <div class="resume__heading_content">
-        <h2>{{section.header}}</h2>
-        <p *ngFor="let item of section.description">{{item}}</p>
-      </div>
-    </resume-section-container>
-  </section>
+      <ng-container [ngSwitch]="section?.type">
 
-  <!---TODO: use here new control flow 'for' --->
-  <section *ngFor="let section of data.sections"
-           id="{{section.title}}">
-    <resume-section-container [backgroundColor]="section.backgroundColor">
-      <ng-container slot="header">{{section.title}}</ng-container>
-      <div class="resume__section_content">
-        <div class="resume__section_content__item"
-             *ngFor="let item of section.content">
-          <resume-accordion>
-            <resume-accordion-header slot="header"
-                                     [subheader]="item.subheader"
-                                     [header]="item.header">
-            </resume-accordion-header>
-            <resume-accordion-body
-              slot="body"
-              [description]="item.description">
-            </resume-accordion-body>
-          </resume-accordion>
-        </div>
-      </div>
-    </resume-section-container>
-  </section>
+        <section
+          *ngSwitchCase="sectionType.HEADING"
+          id="{{section.title}}">
+          <resume-section-container
+            [color]="section?.color"
+            [backgroundColor]="section?.backgroundColor">
 
-</div>
+            <ng-container slot="header">{{section.title}}</ng-container>
+            <div class="resume__heading_content">
+              <h2>{{section.data.header}}</h2>
+              <p *ngFor="let item of section.data.description">{{item}}</p>
+            </div>
+          </resume-section-container>
+        </section>
+
+        <resume-section-skills
+          [data]="section?.data"
+          *ngSwitchCase="sectionType.SKILLS"
+          [color]="section?.color"
+          [backgroundColor]="section?.backgroundColor">
+          <ng-container slot="header">{{section.title}}</ng-container>
+        </resume-section-skills>
+
+
+        <resume-section-container
+          *ngSwitchCase="sectionType.ADDITIONAL"
+          [color]="section?.color"
+          [backgroundColor]="section?.backgroundColor">
+          <ng-container slot="header">{{section.title}}</ng-container>
+          <div class="resume__section_content">
+            <resume-section-additional
+              [items]="section.data.items"
+            ></resume-section-additional>
+          </div>
+        </resume-section-container>
+
+        <resume-section-container
+          *ngSwitchCase="sectionType.ITEMS"
+          [color]="section?.color"
+          [backgroundColor]="section?.backgroundColor">
+          <ng-container slot="header">{{section.title}}</ng-container>
+          <div class="resume__section_content">
+            <div class="resume__section_content__item"
+                 *ngFor="let item of section.data.content">
+              <resume-accordion>
+                <resume-accordion-header slot="header"
+                                         [subheader]="item.subheader"
+                                         [header]="item.header">
+                </resume-accordion-header>
+                <resume-accordion-body-list
+                  slot="body"
+                  [list]="item.list">
+                </resume-accordion-body-list>
+              </resume-accordion>
+            </div>
+          </div>
+        </resume-section-container>
+
+        <resume-section-container
+          *ngSwitchCase="sectionType.ITEMS_DESCRIPTION"
+          [color]="section?.color"
+          [backgroundColor]="section?.backgroundColor">
+          <ng-container slot="header">{{section.title}}</ng-container>
+          <div class="resume__section_content">
+            <div class="resume__section_content__item"
+                 *ngFor="let item of section.data.content">
+              <resume-accordion>
+                <resume-accordion-header slot="header"
+                                         [subheader]="item.subheader"
+                                         [header]="item.header">
+                </resume-accordion-header>
+                <resume-accordion-list-complex
+                  slot="body"
+                  [complexList]="item.complexList">
+                </resume-accordion-list-complex>
+
+              </resume-accordion>
+            </div>
+          </div>
+        </resume-section-container>
+
+        <resume-section-container
+          *ngSwitchDefault
+          [color]="section?.color"
+          [backgroundColor]="section?.backgroundColor">
+          <ng-container slot="header">{{section.title}}</ng-container>
+          <div class="resume__section_content">
+          </div>
+        </resume-section-container>
+      </ng-container>
+
+    </section>
+
+    <section>
+      <resume-section-footer
+        [header]="data.footer"
+        [fullName]="data.fullName"
+        [socialItems]="data.socialItems">
+      </resume-section-footer>
+    </section>
+  </div>
+</ng-container>

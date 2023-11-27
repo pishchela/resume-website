@@ -7,14 +7,21 @@
   --resume-section-default-color: #E3E9EE;
   --resume-opacity-black-color: rgba(0, 0, 0, 0.40);
   --resume-hr-color: rgba(25, 32, 31, 0.20);
+  --resume-hr-color-white: rgba(255, 255, 255, 0.20);
 
   --paddding-side-size-default: 2.15vw;
   --padding-side-size-desktop: 30px;
   --paddding-side-size-tablet: 20px;
+  --paddding-side-size-mobile: 10px;
   --paddding-side-size: var(--paddding-side-size-default);
 
   --header-height: 3.21vw;
   --header-height-desktop: 45px;
+
+  --sections-content-max-width-default: 63.35vw;
+  --sections-content-max-width-largest: 887px;
+  --sections-content-max-width-desktop: 63.29vw;
+  --sections-content-max-width-tablet-small: 100%;
 }
 
 html, body {
@@ -57,5 +64,11 @@ hr {
   }
   .tablet {
     display: flex;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  :root {
+    --paddding-side-size: var(--paddding-side-size-mobile);
   }
 }
