@@ -166,4 +166,7 @@ export class AppComponent implements OnInit, OnDestroy {
     //   snap: 1 / 4
     // });
   }
+  // squash commit 1
+  // squash commit 2
+  // squash commit 3
 }
