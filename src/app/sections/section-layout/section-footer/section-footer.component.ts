@@ -6,7 +6,10 @@ import { CommonModule } from "@angular/common";
   standalone: true,
   selector: 'resume-section-footer',
   templateUrl: './section-footer.component.html',
-  styleUrls: ['../section-layout.component.scss'],
+  styleUrls: [
+    './section-footer.component.scss',
+    '../section-layout.component.scss',
+  ],
   imports: [
     CommonModule,
   ],

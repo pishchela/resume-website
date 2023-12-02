@@ -30,13 +30,6 @@
     align-items: flex-start;
     width: fit-content;
   }
-  &__copyright {
-    display: flex;
-    flex-direction: row-reverse;
-    p {
-      color: rgba(255, 255, 255, 0.40);
-    }
-  }
 }
 
 h1 {
