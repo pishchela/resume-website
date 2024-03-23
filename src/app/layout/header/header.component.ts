@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { SidenavService } from "../sidenav/services/sidenav.service";
 
 @Component({
   selector: 'resume-header',
@@ -17,5 +18,13 @@ export class HeaderComponent {
   @Input()
   public fullName!: string;
   @Input()
-  public nav!: string[]
+  public nav!: string[];
+
+  constructor(private _sidebarNav: SidenavService) {
+
+  }
+
+  public toggleSidebar(): void {
+    this._sidebarNav.toggle();
+  }
 }

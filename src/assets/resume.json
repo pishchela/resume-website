@@ -36,6 +36,7 @@
       "title": "Biography",
       "backgroundColor": "#E3E9EE",
       "type": "heading",
+      "sectionId": "Biography",
       "data": {
         "header": "Seeking a leadership role focused on sustainable engineering and management.",
         "description": [
@@ -48,6 +49,7 @@
       "title": "Education",
       "backgroundColor": "#FFF",
       "type": "items",
+      "sectionId": "Education",
       "data": {
         "content": [
           {
@@ -82,6 +84,7 @@
       "title": "Professional experience",
       "type": "items",
       "backgroundColor": "#E3EEE9",
+      "sectionId": "Experience",
       "data": {
         "content": [
           {
@@ -328,6 +331,7 @@
     {
       "title": "Additional skills & Knowledge",
       "backgroundColor": "#E3EEE9",
+      "sectionId": "Skills",
       "color": "#19201F",
       "type": "skills",
       "data": {

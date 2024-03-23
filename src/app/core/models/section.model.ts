@@ -21,5 +21,5 @@ export interface Section {
   color: string;
   type?: SECTION_TYPE;
   data?: SECTION_DATA_TYPE;
-  linkName?: string; // for nav;
+  sectionId?: string; // for nav;
 }

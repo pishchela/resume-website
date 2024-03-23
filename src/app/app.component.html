@@ -14,14 +14,12 @@
     </section>
 
     <!---TODO: use here new control flow 'for' and 'switch' as well--->
-    <section *ngFor="let section of data.sections"
-             id="{{section.title}}">
+    <section *ngFor="let section of data.sections" id="{{getSectionId(section)}}">
 
       <ng-container [ngSwitch]="section?.type">
 
-        <section
-          *ngSwitchCase="sectionType.HEADING"
-          id="{{section.title}}">
+        <ng-container
+          *ngSwitchCase="sectionType.HEADING">
           <resume-section-container
             [color]="section?.color"
             [backgroundColor]="section?.backgroundColor">
@@ -32,7 +30,7 @@
               <p *ngFor="let item of section.data.description">{{item}}</p>
             </div>
           </resume-section-container>
-        </section>
+        </ng-container>
 
         <resume-section-skills
           [data]="section?.data"
@@ -120,4 +118,14 @@
       </resume-section-footer>
     </section>
   </div>
+  <app-sidenav
+  [sidenavTemplateRef]="navContent"
+  [navWidth]="280"
+  [duration]="0.5"></app-sidenav>
+
+  <ng-template #navContent>
+    <div *ngFor="let navItem of data.nav">
+      {{navItem}}
+    </div>
+  </ng-template>
 </ng-container>

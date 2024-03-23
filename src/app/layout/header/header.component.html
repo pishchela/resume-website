@@ -1,5 +1,6 @@
 <header>
   <div class="full_name">
+    <!--TODO: scroll top on name click-->
     <p>{{fullName}}</p>
   </div>
   <nav class="desktop">
@@ -11,7 +12,7 @@
     </ul>
   </nav>
   <div class="mobile-menu-trigger tablet">
-    <button>
+    <button (click)="toggleSidebar()">
       <img src="../../../assets/images/menu.svg" alt="mobile-menu">
     </button>
   </div>

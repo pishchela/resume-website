@@ -1,6 +1,47 @@
 @import "../../../assets/styles/variables";
 
-$skillBorder: 1px solid rgba(25, 32, 31, 0.20);
+$skillBorderColor: rgba(25, 32, 31, 0.20);
+
+@mixin calculate-multiline-background-image() {
+
+  background-attachment: local;
+  background-image:
+    linear-gradient(to right, transparent 0, transparent 0),
+    linear-gradient(to left, transparent 0, transparent 0),
+    repeating-linear-gradient(
+        transparent,
+        transparent 4.93vw,
+        $skillBorderColor 4.93vw,
+        $skillBorderColor 5vw,
+        transparent 5vw
+    );
+  line-height: 4.93vw;
+
+  @media screen and (max-width: $screenWidthLargest) {
+    background-image:
+      linear-gradient(to right, transparent 0, transparent 0),
+      linear-gradient(to left, transparent 0, transparent 0),
+      repeating-linear-gradient(
+          transparent,
+          transparent 68px,
+          $skillBorderColor 68px,
+          $skillBorderColor 69px,
+          transparent 69px
+      );
+  }
+  @media screen and (max-width: $screenWidthDesktop) {
+    background-image:
+      linear-gradient(to right, transparent 0, transparent 0),
+      linear-gradient(to left, transparent 0, transparent 0),
+      repeating-linear-gradient(
+          transparent,
+          transparent 47px,
+          $skillBorderColor 47px,
+          $skillBorderColor 48px,
+          transparent 48px
+      );
+  }
+}
 
 :host {
   display: flex;
@@ -8,77 +49,119 @@ $skillBorder: 1px solid rgba(25, 32, 31, 0.20);
   h3 {
     margin-bottom: 9.93vw;
   }
-  .skills {
-    display: flex;
-    justify-content: space-between;
-    &__header {
-      width: calc(100% - var(--sections-content-max-width-default));
-      h6 {
-        padding-bottom: 0.71vw;
-        border-bottom: $skillBorder;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  &__header {
+    //width: calc(100% - var(--sections-content-max-width-default) - 7.14vw);
+    //padding-right: 7.14vw;
+    width: calc(100% - var(--sections-content-max-width-default));
+    h6 {
+      padding-bottom: 0.71vw;
+      // border-bottom: 1px solid $skillBorderColor;
+    }
+  }
+  &__values {
+    position: relative;
+    width: var(--sections-content-max-width-default);
+
+    p {
+      height: fit-content;
+      margin-bottom: 3.21vw;
+      &:last-child {
+        margin-bottom: 7.14vw;
       }
     }
-    &__values {
-      width: var(--sections-content-max-width-default);
-      p {
-        padding-bottom: 0.71vw;
-        height: fit-content;
-        border-bottom: $skillBorder;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-      &__multiple {
-        display: flex;
-        flex-wrap: wrap;
+    &__multiple {
+      display: flex;
+      flex-wrap: wrap;
 
-        p {
+      p {
+        &:after {
+          content: ",";
+          flex: auto;
+        }
+        &:last-child {
           &:after {
-            content: ",";
-            flex: auto;
-          }
-          &:last-child {
-            &:after {
-              content: unset;
-            }
+            content: unset;
           }
         }
       }
+    }
+
+    &__underline {
+      top: -2.5vw;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      @include calculate-multiline-background-image();
     }
   }
 }
 
 @media screen and (max-width: $screenWidthLargest) {
   .skills {
-    &__header {
-      h6 {
-        padding-bottom: 10px;
+      &__header {
+        h6 {
+          padding-bottom: 10px;
+        }
+      }
+      &__values {
+        // margin-bottom: 100px;
+        p {
+          margin-bottom: 45px;
+          &:last-child {
+            margin-bottom: 100px;
+          }
+        }
+        &__underline {
+          top: -35.5px;
+        }
       }
     }
-    &__values {
-      margin-bottom: 100px;
-      p {
-        padding-bottom: 10px;
-      }
+    h3 {
+      margin-bottom: 139px;
     }
-  }
-  h3 {
-    margin-bottom: 139px;
-  }
-  p {
-    margin-bottom: 35px;
-  }
 }
 
 
 @media screen and (max-width: $screenWidthDesktop) {
-  h3 {
-    margin-bottom: 0;
+  :host {
+    flex-direction: row;
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+  .skills {
+    flex-direction: column;
+    &__header {
+      width: 100%;
+    }
+    &__values {
+      overflow: hidden;
+      padding-top: 20px;
+      padding-left: 50px;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+      p {
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &__underline {
+        top: -3px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: $screenWidthTabletSmall) {
-  h3 {
-    margin-bottom: 40px;
+  :host {
+    h3 {
+      margin-bottom: 40px;
+    }
   }
 }
