@@ -7,15 +7,12 @@
       <h6>{{skill.key}}</h6>
     </div>
     <div class="skills__values">
-      <div class="skills__values__underline"></div>
       <ng-container [ngSwitch]="skill?.flow">
-        <ng-container *ngSwitchCase="sectionFlows.MULTIPLE">
-          <div class="skills__values__multiple">
-            <p *ngFor="let item of skill?.values">
+          <div class="skills__values__multiple" *ngSwitchCase="sectionFlows.MULTIPLE">
+            <p *ngFor="let item of skill?.values" class="skills__values__multiple__item">
               {{item}}
             </p>
           </div>
-        </ng-container>
         <ng-container *ngSwitchCase="sectionFlows.SINGLE">
           <p *ngFor="let item of skill?.values">
             {{item}}

@@ -28,6 +28,7 @@ import {
 } from "./shared/components/accordion/accordion-body/accordion-body-list-complex/accordion-body-list-complex.component";
 import { Section, SectionTypes } from "./core/models/section.model";
 import { SideNavComponent } from './layout/sidenav/components/sidenav.component';
+import { SidenavService } from './layout/sidenav/services/sidenav.service';
 
 const accordionComponents = [
   AccordionContainerComponent,
@@ -72,7 +73,8 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(
     private _dataService: DataService,
     private _cdr: ChangeDetectorRef,
-    private _scroller: ViewportScroller
+    private _scroller: ViewportScroller,
+    private _sidenavService: SidenavService,
   ) {
   }
 
@@ -94,6 +96,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   public scrollToSection(sectionName: string) {
+    this._sidenavService.setState(false);
     // const sectionPosition = this._scroller.getScrollPosition(sectionName);
     const headerHeight = HTMLUtils.getHeaderHeight();
     const sectionPosition = Number(document.getElementById(sectionName)?.offsetTop);
