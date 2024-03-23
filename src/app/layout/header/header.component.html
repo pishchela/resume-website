@@ -11,9 +11,10 @@
       >{{navItem}}</li>
     </ul>
   </nav>
-  <div class="mobile-menu-trigger tablet">
-    <button (click)="toggleSidebar()">
-      <img src="../../../assets/images/menu.svg" alt="mobile-menu">
-    </button>
+  <div
+      (click)="toggleSidebar()"    
+      class="mobile-menu-trigger tablet menu-btn-6"
+      [class.active]="showSideNav | async">
+        <span></span>
   </div>
 </header>

@@ -1,5 +1,5 @@
 import { Component, HostListener, Input, OnDestroy, OnInit } from "@angular/core";
-import { debounceTime, filter, fromEvent, Observable, of, Subscription, tap } from "rxjs";
+import { debounceTime, filter, fromEvent, Observable, Subscription, tap } from "rxjs";
 import { SidenavService } from "../services/sidenav.service";
 import { CommonModule } from "@angular/common";
 
@@ -20,7 +20,7 @@ const SCREEN_WIDTH_DESKTOP = 1024;
     ]
 })
 export class SideNavComponent implements OnInit, OnDestroy {
-  public showSideNav: Observable<boolean> = of(false);
+  public showSideNav?: Observable<boolean>;
   private _resizeObservable$: Observable<Event> = fromEvent(window, 'resize');
   private _resizeSubscription$?: Subscription;
 

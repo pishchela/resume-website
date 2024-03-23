@@ -1,0 +1,102 @@
+body {
+    margin:0;
+    background-color: #eaeaea;
+}
+
+// i need button 5
+.all-btn {
+    padding:12% 5%;
+}
+
+.all-btn div {
+    float: left;
+    margin-right: 10%;
+}
+
+.all-btn div:last-child {
+    margin-right: 0;
+}    
+    
+
+/* Menu Button 6 */
+.menu-btn-6 {
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+}
+
+// .menu-btn-6 span,
+.menu-btn-6 span::before,
+.menu-btn-6 span::after {
+    background: #FFF;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;         
+    // margin-top: 8px; 
+
+    -webkit-transition: .3s ease-in-out .3s;
+    -moz-transition: .3s ease-in-out .3s;
+    -o-transition: .3s ease-in-out .3s;
+    transition: .3s ease-in-out .3s;
+}
+
+.menu-btn-6 span::before {
+    margin-top:-6px;
+    
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.menu-btn-6 span::after {
+    margin-top: 8px;
+    
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+// .menu-btn-6.active span {
+//     background: transparent;
+    
+//     -webkit-transition: .3s ease-in-out;
+//     -moz-transition: .3s ease-in-out;
+//     -o-transition: .3s ease-in-out;
+//     transition: .3s ease-in-out;
+
+//     -webkit-transform:rotate(-90deg);
+//     -moz-transform:rotate(-90deg);
+//     -o-transform:rotate(-90deg);
+//     transform:rotate(-90deg);
+// }
+
+.menu-btn-6.active span::before {
+    margin-top:0;
+    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    // -webkit-transition-delay: .3s;
+    // -moz-transition-delay: .3s;
+    // -o-transition-delay: .3s;
+    // transition-delay: .3s;
+}
+
+.menu-btn-6.active span::after {
+    margin-top:0;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    // -webkit-transition-delay: .6s;
+    // -moz-transition-delay: .6s;
+    // -o-transition-delay: .6s;
+    // transition-delay: .3s;
+}
