@@ -14,5 +14,4 @@ export class DataService {
   public getResumeData(): Observable<Resume> {
     return this._httpClient.get<Resume>(environment.resumeUrl);
   }
-  // TODO: save object to local storage to not send http request one more time on page reload; ??
 }

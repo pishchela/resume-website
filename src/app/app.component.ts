@@ -29,6 +29,7 @@ import {
 import { Section, SectionTypes } from "./core/models/section.model";
 import { SideNavComponent } from './layout/sidenav/components/sidenav.component';
 import { SidenavService } from './layout/sidenav/services/sidenav.service';
+import { environment } from 'src/environments/environment';
 
 const accordionComponents = [
   AccordionContainerComponent,
@@ -65,6 +66,7 @@ const sectionComponents = [
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit, OnDestroy {
+  public mainImageUrl = environment.mainImageUrl;
   public sectionType = SectionTypes;
   // TODO: https://angular.io/guide/prerendering
   // TODO: change builder to esbuild
@@ -86,7 +88,7 @@ export class AppComponent implements OnInit, OnDestroy {
         this.data = res;
         // console.warn(this.data);
         this._cdr.markForCheck();
-      })
+      });
   }
 
   public ngOnDestroy() {

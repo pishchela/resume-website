@@ -8,6 +8,7 @@
   <div class="resume">
     <section>
       <resume-section-header
+        [imageUrl]="mainImageUrl"
         [header]="data.header"
         [socialItems]="data.socialItems">
       </resume-section-header>
@@ -112,6 +113,7 @@
 
     <section>
       <resume-section-footer
+        [imageUrl]="mainImageUrl"
         [header]="data.footer"
         [fullName]="data.fullName"
         [socialItems]="data.socialItems">

@@ -18,4 +18,6 @@ export class SectionHeaderComponent {
   public header!: string;
   @Input()
   public socialItems!: SocialItem[];
+  @Input()
+  public imageUrl?: string;
 }
