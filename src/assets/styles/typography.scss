@@ -33,6 +33,7 @@ h3 {
   font-size: 1.71vw;
   font-weight: 700;
   line-height: 66.667%;
+  max-width: calc(100% - var(--sections-content-max-width) - 30px);
 }
 
 h4 {
@@ -95,7 +96,7 @@ a {
   }
   h3 {
     font-size: 24px;
-    line-height: 16px;
+    line-height: 22px;
   }
   h4 {
     font-size: 25px;
@@ -131,8 +132,8 @@ a {
     line-height: 32px;
   }
   h3 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 16px;
   }
   h4 {
     font-size: 25px;
@@ -162,5 +163,11 @@ a {
   h1 {
     font-size: 32px;
     line-height: 32px;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  h3 {
+    max-width: unset;
   }
 }

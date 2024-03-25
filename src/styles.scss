@@ -21,8 +21,11 @@
 
   --sections-content-max-width-default: 63.35vw;
   --sections-content-max-width-largest: 887px;
+  --sections-content-max-width-large: 667px;
   --sections-content-max-width-desktop: 63.29vw;
   --sections-content-max-width-tablet-small: 100%;
+
+  --sections-content-max-width: var(--sections-content-max-width-default);
 
   --section-skills-background: #E3EEE9;
   --section-skills-line-height-default: 31px;
@@ -56,12 +59,20 @@ hr {
   :root {
     --paddding-side-size: var(--padding-side-size-desktop);
     --header-height: var(--header-height-desktop);
+    --sections-content-max-width: var(--sections-content-max-width-largest);
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktopLarge) {
+  :root {
+    --sections-content-max-width: var(--sections-content-max-width-large);
   }
 }
 
 @media screen and (max-width: $screenWidthDesktop) {
   :root {
     --paddding-side-size: var(--paddding-side-size-tablet);
+    --sections-content-max-width: var(--sections-content-max-width-desktop);
   }
   .desktop {
     display: none!important;
@@ -74,5 +85,6 @@ hr {
 @media screen and (max-width: $screenWidthTabletSmall) {
   :root {
     --paddding-side-size: var(--paddding-side-size-mobile);
+    --sections-content-max-width: var(--sections-content-max-width-tablet-small);
   }
 }

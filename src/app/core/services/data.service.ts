@@ -4,6 +4,7 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
 import { Resume } from "../models/resume.model";
+import { environment } from './../../../environments/environment';
 
 @Injectable()
 export class DataService {
@@ -11,6 +12,7 @@ export class DataService {
   }
 
   public getResumeData(): Observable<Resume> {
-    return this._httpClient.get<Resume>(`assets/resume.json`);
+    return this._httpClient.get<Resume>(environment.resumeUrl);
   }
+  // TODO: save object to local storage to not send http request one more time on page reload; ??
 }

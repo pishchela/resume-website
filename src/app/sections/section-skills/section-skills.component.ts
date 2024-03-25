@@ -39,7 +39,7 @@ export class SectionSkillsComponent extends SectionsBase implements AfterViewIni
 
       };
     });
-    console.warn(this.skills);
+    // console.warn(this.skills);
   }
 
   public skills?: SkillItem[];

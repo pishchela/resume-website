@@ -14,14 +14,14 @@ $skillBorderColor: rgba(25, 32, 31, 0.20);
   display: flex;
   justify-content: space-between;
   &__header {
-    width: calc(100% - var(--sections-content-max-width-default));
     h6 {
       padding-bottom: 0.71vw;
     }
   }
   &__values {
     position: relative;
-    width: var(--sections-content-max-width-default);
+    width: 100%;
+    max-width: var(--sections-content-max-width);
 
     p {
       height: fit-content;
@@ -37,15 +37,6 @@ $skillBorderColor: rgba(25, 32, 31, 0.20);
       flex-wrap: wrap;
 
       p {
-        // &:after {
-        //   content: "";
-        //   flex: auto;
-        // }
-        // &:last-child {
-        //   &:after {
-        //     content: unset;
-        //   }
-        // }
         &.last-in-row {
           flex-grow: 100;
         }
@@ -85,10 +76,13 @@ $skillBorderColor: rgba(25, 32, 31, 0.20);
   }
   .skills {
     flex-direction: column;
+    max-width: var(--sections-content-max-width);
+    width: var(--sections-content-max-width);
     &__header {
       width: 100%;
     }
     &__values {
+      max-width: calc(100% - 50px);
       overflow: hidden;
       padding-top: 20px;
       padding-left: 50px;

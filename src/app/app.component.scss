@@ -1,9 +1,6 @@
 @import "../assets/styles/variables";
 
 .resume {
-  //flex: 1;
-  //overflow:scroll;
-  //overscroll-behavior: none;
 
   &__heading_content {
     h2 {
@@ -24,6 +21,16 @@
   &__section_content {
     &__item {
       margin-bottom: 2.86vw;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__sidenav-content {
+    margin-top: 24px;
+    h4 {
+      margin-bottom: 32px; 
       &:last-child {
         margin-bottom: 0;
       }

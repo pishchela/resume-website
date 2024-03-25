@@ -124,10 +124,12 @@
   [duration]="0.5"></app-sidenav>
 
   <ng-template #navContent>
-    <h4
-      *ngFor="let navItem of data.nav"
-      (click)="scrollToSection(navItem)">
-      {{navItem}}
-    </h4>
+    <div class="resume__sidenav-content">
+      <h4
+        *ngFor="let navItem of data.nav"
+        (click)="scrollToSection(navItem)">
+        {{navItem}}
+      </h4>
+    </div>
   </ng-template>
 </ng-container>

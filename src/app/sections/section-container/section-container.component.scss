@@ -2,33 +2,17 @@
 
 .section__content {
   width: 100%;
-  max-width: var(--sections-content-max-width-default);
-}
-
-@media screen and (max-width: $screenWidthLargest) {
-  .section__content {
-    max-width: var(--sections-content-max-width-largest);
-  }
-}
-
-@media screen and (max-width: $screenWidthDesktopLarge) {
-  .section__content {
-    // padding-left: 100px;
-  }
+  max-width: var(--sections-content-max-width);
 }
 
 @media screen and (max-width: $screenWidthDesktop) {
   .section__content {
     padding-left: 0;
-    max-width: var(--sections-content-max-width-desktop);
   }
 }
 
 @media screen and (max-width: $screenWidthTabletSmall) {
   h3 {
     margin-bottom: 40px;
-  }
-  .section__content {
-    max-width: var(--sections-content-max-width-tablet-small);
   }
 }

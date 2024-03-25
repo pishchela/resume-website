@@ -67,6 +67,8 @@ const sectionComponents = [
 export class AppComponent implements OnInit, OnDestroy {
   public sectionType = SectionTypes;
   // TODO: https://angular.io/guide/prerendering
+  // TODO: change builder to esbuild
+  // TODO: crop image!;
   public data!: Resume;
 
   private _dataSubscription!: Subscription;
@@ -82,7 +84,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this._dataSubscription = this._dataService.getResumeData()
       .subscribe((res: Resume) => {
         this.data = res;
-        console.warn(this.data);
+        // console.warn(this.data);
         this._cdr.markForCheck();
       })
   }
