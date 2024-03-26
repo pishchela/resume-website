@@ -5,8 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "start-prod": "ng serve --configuration production",
+    "start-prod-paley": "ng serve --configuration production-paley",
+    "start-prod-pishchela": "ng serve --configuration production-pishchela",
     "build": "ng build",
     "build-prod": "ng build --configuration production",
+    "build-prod-paley": "ng build --configuration production-paley",
+    "build-prod-pishchela": "ng build --configuration production-pishchela",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

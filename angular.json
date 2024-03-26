@@ -35,6 +35,50 @@
             "scripts": []
           },
           "configurations": {
+            "production-paley": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.production-paley.ts"
+                }
+              ],
+               "index": "src/production/paley-vladislav/index.html"
+            },
+            "production-pishchela": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.production-pishchela.ts"
+                }
+              ],
+               "index": "src/production/pishchela-oleksandr/index.html"
+            },
             "production": {
               "budgets": [
                 {
@@ -72,6 +116,12 @@
           "configurations": {
             "production": {
               "buildTarget": "resume-website:build:production"
+            },
+            "production-paley": {
+              "buildTarget": "resume-website:build:production-paley"
+            },
+            "production-pishchela": {
+              "buildTarget": "resume-website:build:production-pishchela"
             },
             "development": {
               "buildTarget": "resume-website:build:development"

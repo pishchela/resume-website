@@ -4,7 +4,7 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
 import { Resume } from "../models/resume.model";
-import { environment } from './../../../environments/environment';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class DataService {
