@@ -1,0 +1,24 @@
+<h3>
+  <ng-content select="[slot=header]"></ng-content>
+</h3>
+<div>
+  <div *ngFor="let skill of skills" class="skills">
+    <div class="skills__header">
+      <h6>{{skill.key}}</h6>
+    </div>
+    <div class="skills__values">
+      <ng-container [ngSwitch]="skill?.flow">
+          <div class="skills__values__multiple" *ngSwitchCase="sectionFlows.MULTIPLE">
+            <p *ngFor="let item of skill?.values" class="skills__values__multiple__item">
+              {{item}}
+            </p>
+          </div>
+        <ng-container *ngSwitchCase="sectionFlows.SINGLE">
+          <p *ngFor="let item of skill?.values">
+            {{item}}
+          </p>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</div>

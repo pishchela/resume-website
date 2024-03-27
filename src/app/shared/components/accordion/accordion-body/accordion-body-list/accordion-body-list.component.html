@@ -1,6 +1,6 @@
 <div class="body-list">
-  <p *ngFor="let item of list">
-    {{item}}
+  <p *ngFor="let item of list"
+     [innerHTML]="item">
   </p>
 </div>
 

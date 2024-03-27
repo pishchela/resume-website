@@ -1,0 +1,21 @@
+@import "../../assets/styles/variables";
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--paddding-side-size) var(--paddding-side-size) 14.29vw var(--paddding-side-size);
+  background-color: var(--resume-section-default-color);
+}
+
+@media screen and (max-width: $screenWidthLargest) {
+  :host {
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: $screenWidthTabletSmall) {
+  :host {
+    padding-bottom: 80px;
+    flex-direction: column;
+  }
+}

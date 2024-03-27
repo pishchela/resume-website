@@ -1,0 +1,41 @@
+@import "../../../../assets/styles/variables";
+
+.section {
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    &__copyright {
+      position: relative;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      margin-bottom: 1.07vw;
+      p {
+        color: rgba(255, 255, 255, 0.40);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthLargest) {
+  .section {
+    &__bottom {
+      &__copyright {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screenWidthDesktop) {
+  .section {
+    &__bottom {
+      flex-direction: column;
+      &__copyright {
+        padding-top: 30px;
+        flex-direction: row;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
