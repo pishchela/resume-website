@@ -1,4 +1,4 @@
-import { Section } from "./section.model";
+import { Section } from './section.model';
 
 export interface Resume {
   fullName: string;

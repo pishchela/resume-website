@@ -1,21 +1,23 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { SidenavService } from "../sidenav/services/sidenav.service";
-import { Observable } from "rxjs";
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { Observable } from 'rxjs';
+
+import { SidenavService } from '../sidenav/services/sidenav.service';
 
 @Component({
-  selector: 'resume-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
-  imports: [
-    CommonModule,
-  ],
-  standalone: true,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+	selector: 'resume-header',
+	templateUrl: './header.component.html',
+	styleUrls: ['./header.component.scss'],
+	imports: [
+		CommonModule,
+	],
+	standalone: true,
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent implements OnInit {
   @Output()
-  navClicked: EventEmitter<string> = new EventEmitter<string>();
+  public navClicked: EventEmitter<string> = new EventEmitter<string>();
   @Input()
   public fullName!: string;
   @Input()
@@ -26,8 +28,8 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
-    this.showSideNav = this._sidebarNav.isOpenedObs$;
+  public ngOnInit(): void {
+    this.showSideNav = this._sidebarNav.getIsOpenedObs();
   }
 
   public toggleSidebar(): void {

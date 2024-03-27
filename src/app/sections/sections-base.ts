@@ -1,11 +1,11 @@
-import { Directive, HostBinding, Input } from "@angular/core";
+import { Directive, HostBinding, Input } from '@angular/core';
 
 @Directive()
 export abstract class SectionsBase {
   @Input()
   @HostBinding('style.background-color')
-  backgroundColor!: string | undefined;
+  public backgroundColor!: string | undefined;
   @Input()
   @HostBinding('style.color')
-  color!: string | undefined;
+  public color!: string | undefined;
 }
