@@ -3,6 +3,11 @@
     <h1>{{header}}</h1>
     <div class="section__footer__image">
       <img [src]="imageUrl" alt="resume-image">
+      <picture>
+        <source [srcset]="imageWebPUrl" type="image/webp">
+        <source [srcset]="imageUrl" type="image/jpeg"> 
+        <img [src]="imageUrl" alt="cv image">
+      </picture>
     </div>
   </div>
   <div class="section__bottom">
@@ -28,7 +33,6 @@
         </ng-container>
       </ng-container>
     </div>
-    <!---TODO: store image in next-gen format  + angular technique for image--->
     <div class="section__bottom__copyright">
       <p>© {{copyrightYear}} {{fullName}}. All rights reserved.</p>
     </div>

@@ -25,5 +25,7 @@ export class SectionFooterComponent {
   public socialItems!: SocialItem[];
   @Input()
   public imageUrl?: string;
+  @Input()
+  public imageWebPUrl?: string;
   public copyrightYear: number = new Date().getFullYear();
 }

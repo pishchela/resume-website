@@ -20,4 +20,6 @@ export class SectionHeaderComponent {
   public socialItems!: SocialItem[];
   @Input()
   public imageUrl?: string;
+  @Input()
+  public imageWebPUrl?: string;
 }

@@ -2,7 +2,11 @@
   <div class="section__header">
     <h1>{{header}}</h1>
     <div class="section__header__image">
-      <img [src]="imageUrl" alt="resume-image">
+      <picture>
+        <source [srcset]="imageWebPUrl" type="image/webp">
+        <source [srcset]="imageUrl" type="image/jpeg"> 
+        <img [src]="imageUrl" alt="cv image">
+      </picture>
     </div>
   </div>
   <div class="section__social">

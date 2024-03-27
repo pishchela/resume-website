@@ -67,10 +67,12 @@ const sectionComponents = [
 })
 export class AppComponent implements OnInit, OnDestroy {
   public mainImageUrl = environment.mainImageUrl;
+  public mainImageWebPUrl = environment.mainImageWebPUrl;
   public sectionType = SectionTypes;
   // TODO: https://angular.io/guide/prerendering
   // TODO: change builder to esbuild
   // TODO: crop image!;
+  // TODO: adapt to lighthouse(chrome)
   public data!: Resume;
 
   private _dataSubscription!: Subscription;
