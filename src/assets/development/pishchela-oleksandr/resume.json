@@ -1,0 +1,290 @@
+{
+  "fullName": "Oleksandr Pishchela",
+  "header" : "Experienced Frontend Developer is seeking for a new challanges and exciting opportunities.",
+  "footer": "Don’t hesitate to contact me if you need further information, let’s cooperate",
+  "socialItems": [
+    {
+      "type": "email",
+      "key": "o.pishchela@gmail.com",
+      "value": "o.pishchela@gmail.com"
+    },
+    {
+      "type": "phone",
+      "key": "(267) 307-0362",
+      "value": "2673070362"
+    },
+    {
+      "type": "link",
+      "key": "Leetcode",
+      "value": "https://leetcode.com/pishchela/"
+    },
+    {
+      "type": "link",
+      "key": "LinkedIn",
+      "value": "https://www.linkedin.com/in/pishchela/"
+    },
+    {
+      "type": "link",
+      "key": "Resume (PDF)",
+      "value": "https://cv-vladislav-paley-data.s3.amazonaws.com/Vladislav_Paley.docx"
+    }
+  ],
+  "nav": [
+    "Biography",
+    "Education",
+    "Experience",
+    "Skills",
+    "Certifications"
+  ],
+  "sections": [
+    {
+      "title": "Biography",
+      "backgroundColor": "#E3E9EE",
+      "type": "heading",
+      "sectionId": "Biography",
+      "data": {
+        "header": "Experienced Frontend Developer is seeking for a new challanges and exciting opportunities.",
+        "description": [
+          "Bringing over a 5 years of diverse frontend development experience, I excel in automation, failure analysis, and risk assessment. With a unique ability to bridge technical and business domains, I'm recognized for my exceptional communication skills and commitment to innovation.",
+          "As a self-motivated individual and a valuable team player, I am deeply committed of crafting dynamic web solutions with efficiency and precision."
+        ]
+      }
+    },
+    {
+      "title": "Education",
+      "backgroundColor": "#FFF",
+      "type": "items",
+      "sectionId": "Education",
+      "data": {
+        "content": [
+          {
+            "header": "Bachelor of Science",
+            "subheader": "in Software Engineering - National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute', Kyiv, Ukraine - 2019",
+            "list": [
+              "Experienced in Laser cutting, 3D printing, Computer-Aided Design, and Finite Element Modeling",
+              "Trained in lab work, tag out lock out regulations, and safety-first prioritization while gaining a hands-on experience"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Professional experience",
+      "type": "items",
+      "backgroundColor": "#E3EEE9",
+      "sectionId": "Experience",
+      "data": {
+        "content": [
+          {
+            "header": "Angular Developer",
+            "subheader": "Apex Systems / SEI Investments, Oaks, PA, USA - November 2023 to Present",
+            "list": [
+            ]
+          },
+          {
+            "header": "Angular Developer",
+            "subheader": "PIN-UP.TECH, Kyiv, Ukraine - November 2022 to November 2023",
+            "list": [
+            ]
+          },
+          {
+            "header": "Angular Developer",
+            "subheader": "JEVERA, Kyiv, Ukraine - June 2021 to September 2022",
+            "list": [
+            ]
+          },
+          {
+            "header": "Junior Frontend Developer",
+            "subheader": "Universal Commerce Group, Kyiv, Ukraine - January 2020 to June 2021",
+            "list": [
+              "Managed a newly-functional, chemically-intensive R&D laboratory, focusing on safety aspects like rule creation, program development, competency training, hazard assessment, chemical and waste management, equipment maintenance, and the shipping and receiving of Dangerous Goods (DG). Ensured adherence to DOT & IATA shipping procedures, for domestic & international shipments.",
+              "Maintained strict compliance with numerous regulations, encompassing federal, state, local, and corporate levels. This included recordkeeping, reporting, inspections and audits, in alignment with standards set by bodies like OSHA, EPA, DEA, and more.",
+              "Developed and implemented comprehensive safety programs and protocols such as the Emergency Action Plan, Injury and Illness Prevention Plan, Hazard Communication, and Waste Management Plan. Increased employee safety by implementing a myriad of safety features such as an Emergency Response Team, strategically placed walkie-talkies and signs, additional sensors and alarms, and evacuation drills.",
+              "Oversaw the lifecycle of chemicals from entry to exit, implementing rigorous management practices and providing specialized training to employees. Enacted strict measures like spill containment, scrubbers on air vents, and filters to maintain a safe working environment.",
+              "Initiated the implementation of ISO9001 and IATF16949 quality standards across the site, conducting a thorough gap analysis and formulating a plan of action. Collaboratively built knowledge and expertise to overcome the challenge of the team lacking prior experience with ISO standards."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Project Experience",
+      "backgroundColor": "#E3E9EE",
+      "type": "items",
+      "data": {
+        "content": [
+          {
+            "header": "P2P Investment project",
+            "subheader": "Angular Developer - 2020 to 2021",
+            "list": [
+            ]
+          },
+          {
+            "header": "Partly payment service",
+            "subheader": "Angular Developer - 2021",
+            "list": [
+            ]
+          },
+          {
+            "header": "Widget for parly payment service",
+            "subheader": "Angular Developer - 2021",
+            "list": [
+            ]
+          },
+          {
+            "header": "Scheduling app for medical appointments",
+            "subheader": "Angular Developer - 2021 - 2022",
+            "list": [
+            ]
+          },
+          {
+            "header": "CRM System",
+            "subheader": "Angular Developer - 2022 - 2023",
+            "list": [
+            ]
+          },
+          {
+            "header": "Angular UI Library",
+            "subheader": "Angular Developer - 2023 - Present",
+            "list": [
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Skills",
+      "backgroundColor": "#E3EEE9",
+      "sectionId": "Skills",
+      "color": "#19201F",
+      "type": "skills",
+      "data": {
+        "skills": [
+          {
+            "key": "Certifications",
+            "flow": "single",
+            "values": [
+              "Engineer In Training (EIT # 17-725-17)",
+              "Associate Safety Professional (ASP-37020)",
+              "First Aid, CPR, AED (AHA # 226019179198)",
+              "Effective Chemical Management (EIQ # C111058)",
+              "Liquid Nitrogen Safety (GFUGAUTPTFMT)",
+              "DOT & IATA Hazmat/Dangerous Goods Shipping (125472)",
+              "HAZWOPER First Responder (29 CFR 1910.120)",
+              "Certified SolidWorks Associate (CSWA # C-9BBGEYCYBP)"
+            ]
+          },
+          {
+            "key": "Spoken Languages",
+            "flow": "single",
+            "values": [
+              "Russian",
+              "Ukrainian",
+              "English"
+            ]
+          },
+          {
+            "key": "Software",
+            "flow": "multiple",
+            "values": [
+              "SolidWorks (CSWA Certified)",
+              "Microsoft Office",
+              "ANSYS",
+              "COMSOL",
+              "C++/C#",
+              "Java",
+              "HTML",
+              "MATLAB",
+              "Python"
+            ]
+          },
+          {
+            "key": "Equipment",
+            "flow": "multiple",
+            "values": [
+              "Scanning Electron Microscope (SEM)",
+              "Atomic Force Microscope (AFM)",
+              "Focused Ion Beam (FIB)",
+              "Profilometer",
+              "Electron-Beam Deposition",
+              "X-Ray Diffractometer (XRD)",
+              "Cleanroom",
+              "Sputtering",
+              "Stereolithography (SLA)",
+              "3D Printers incl.",
+              "Lithography/Metrology",
+              "Fused Deposition Modeling (FDM)",
+              "Digital Light Projection (DLP)",
+              "Inkjet/Polyjet"
+            ]
+          },
+          {
+            "key": "Entrepreneurial",
+            "flow": "multiple",
+            "values": [
+              "Business Model Canvas",
+              "Value Proposition (VP)",
+              "Market Research",
+              "Customer Development",
+              "Problem-Solution Fit",
+              "Product-Market Fit",
+              "Minimum Viable Product (MVP)",
+              "Cost Flow Analysis",
+              "Competitive Analysis",
+              "Beneficiary Procurement",
+              "Investor Pitch Presentation",
+              "Gantt Charts"
+            ]
+          },
+          {
+            "key": "Regulations",
+            "flow": "multiple",
+            "values": [
+              "Occupational Safety and Health Administration (OSHA & CalOSHA)",
+              "Department of Transportation (DOT)",
+              "International Air Transport Association (IATA)",
+              "Environmental Protection Agency (US EPA, CalEPA & EU EPA)",
+              "Department of Toxic Substances Control (DTSC)",
+              "Resource Conservation and Recovery Act (RCRA)",
+              "Drug Enforcement Administration (DEA)",
+              "Clean Air Act (CAA)",
+              "Bay Area Air Quality Mgmt District (BAAQMD)",
+              "Code of Federal Regulations (CFR)",
+              "California Code of Regulations (CCR)"
+            ]
+          },
+          {
+            "key": "Standards",
+            "flow": "multiple",
+            "values": [
+              "ISO9001 (Quality)",
+              "IATF16949 (Automotive Quality)",
+              "ISO45001 (Health & Safety)",
+              "ISO14001 (Environment)",
+              "Hazard Communication standard",
+              "Hazardous Waste and Emergency Response standard"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Certifications",
+      "backgroundColor": "#19201F",
+      "color": "#FFF",
+      "type": "additional",
+      "data": {
+        "items": [
+          "Advanced Angular Forms - DecodedFrontend, 2023. <a href=\"https://courses.decodedfrontend.io/certificates/gvfnyqczqy\" target=\"_blank\">https://courses.decodedfrontend.io/certificates/gvfnyqczqy</a>",
+          "The Complete Node.js Developers Course - Udemy, 2023. <a href=\"https://www.udemy.com/certificate/UC-b6ddd28f-62f0-48e2-99c3-3065de1e1c8c/\" target=\"_blank\">https://www.udemy.com/certificate/UC-b6ddd28f-62f0-48e2-99c3-3065de1e1c8c/</a>",
+          "JavaScript Algorithms and Data Structures Masterclass - Udemy, 2023. <a href=\"https://www.udemy.com/certificate/UC-30cd2df7-6da6-4663-95e9-35d548407f05/\" target=\"_blank\">https://www.udemy.com/certificate/UC-30cd2df7-6da6-4663-95e9-35d548407f05/</a>",
+          "Angular Advanced MasterClass - Udemy, 2022. <a href=\"https://www.udemy.com/certificate/UC-7d6195cb-bfe8-4e09-baf4-e86839762880/\" target=\"_blank\">https://www.udemy.com/certificate/UC-7d6195cb-bfe8-4e09-baf4-e86839762880/</a>",
+          "Angular Security Masterclass - Udemy, 2022. <a href=\"https://www.udemy.com/certificate/UC-94f9b030-27e1-454d-a6d1-e7b398c84f5e/\" target=\"_blank\">https://www.udemy.com/certificate/UC-94f9b030-27e1-454d-a6d1-e7b398c84f5e/</a>",
+          "Angular Testing Masterclass - Udemy, 2022. <a href=\"https://www.udemy.com/certificate/UC-2e51575f-bcd3-4bc0-8acd-710da8121ac2/\" target=\"_blank\">https://www.udemy.com/certificate/UC-2e51575f-bcd3-4bc0-8acd-710da8121ac2/</a>",
+          "NgRx - The Complete Guide (Angular 14) - Udemy, 2022. <a href=\"https://www.udemy.com/certificate/UC-e87dc894-f037-45cf-8030-071c8d04f1dc/\" target=\"_blank\">https://www.udemy.com/certificate/UC-e87dc894-f037-45cf-8030-071c8d04f1dc/</a>",
+          "RxJs In Practice - Udemy, 2022. <a href=\"https://www.udemy.com/certificate/UC-fc669672-e103-4ea1-a93a-3a7fddaeab5b/\" target=\"_blank\">https://www.udemy.com/certificate/UC-fc669672-e103-4ea1-a93a-3a7fddaeab5b/</a>"
+        ]
+      }
+    }
+  ]
+}
